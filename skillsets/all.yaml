@@ -1,13 +1,66 @@
 name: all
 description: Install every skill and all MCP presets.
 skills:
+  - accessibility-test-plan
+  - acceptance-criteria-mapper
   - accessibility-inclusive-design
   - account-based-marketing
+  - ai-adoption-plan
+  - ai-governance-checklist
+  - ai-pilot-selection
+  - ai-risk-register
+  - ai-use-case-portfolio
+  - ai-vendor-evaluation
+  - analytics-instrumentation-plan
+  - ai-media-prompt-brief
+  - api-contract-design
+  - api-doc-writing
+  - architecture-docs
+  - auth-flow-design
+  - affiliate-performance-report
+  - backend-test-plan
+  - before-after-evaluation
+  - bug-reproduction
+  - cash-flow-triage
+  - changelog-maintenance
+  - ci-workflow-plan
+  - cloud-cost-review
   - competitive-market-research
   - concise-technical-writing
+  - containerization-plan
+  - caption-writer
+  - content-calendar
+  - community-moderation-brief
+  - community-triage
+  - creator-content-performance-review
+  - content-pillars
+  - creator-invoice-readiness
+  - creator-offer-ladder
+  - creator-owned-product-launch-plan
+  - creator-production-ops-brief
+  - creator-reputation-risk-review
   - content-seo-strategy
+  - cohort-analysis
   - customer-research-validation
+  - dashboard-design
+  - data-exfiltration-review
+  - data-room-checklist
+  - database-schema-review
+  - developer-onboarding
+  - deployment-plan
+  - decision-memo
+  - diligence-response-prep
+  - e2e-test-plan
+  - error-handling-contracts
+  - escalation-pack
+  - environment-config-review
   - experiment-design-validation
+  - experiment-readout
+  - executive-briefing
+  - finance-close-checklist
+  - feedback-synthesis
+  - funnel-analysis
+  - fundraising-narrative
   - game-3d-asset-design
   - game-3d-development
   - game-3d-model-design
@@ -27,25 +80,87 @@ skills:
   - game-ui-design
   - growth-strategy-orchestration
   - itch-html5-game-publishing
+  - issue-to-plan
+  - investor-update
+  - integration-test-plan
+  - kb-from-resolution
   - lifecycle-crm-email
   - marketing-analytics-attribution
   - marketing-positioning-strategy
+  - metric-definition
+  - metric-narrative
+  - migration-guide
+  - ops-bottleneck-review
+  - owner-dashboard
   - paid-media-growth
+  - pitch-deck-structure
+  - pilot-to-scale-roadmap
+  - podcast-outline
   - pricing-packaging-strategy
+  - pricing-margin-review
   - product-analytics-instrumentation
   - product-brainstorming-planning
+  - production-readiness-review
+  - pr-review
   - qa-test-strategy
+  - qa-matrix
   - react-next-performance-optimization
+  - readme-upgrade
+  - regression-check
+  - retention-analysis
   - release-launch-readiness
+  - release-notes
+  - longform-to-shorts
+  - newsletter-repurpose
+  - release-risk
+  - reply-drafting
+  - rate-limit-design
+  - risk-register
+  - rollback-plan
   - sales-conversion-enablement
   - sales-pipeline-management
   - sales-prospecting-outreach
+  - safe-install-checklist
+  - scenario-test-authoring
+  - script-permission-review
+  - secrets-handling-review
+  - service-boundary-design
+  - skill-benchmark-design
   - skill-evaluation-iteration
+  - skill-output-scoring
+  - skill-threat-model
+  - skill-token-overhead-review
+  - short-form-hooks
+  - sql-analysis-plan
+  - supply-chain-review
+  - synthetic-character-bible
   - tailwind-design-system
+  - ticket-triage
+  - tutorial-writing
+  - unit-test-generation
+  - variance-commentary
+  - vendor-negotiation-prep
+  - video-script
   - visual-ui-ux-audit
+  - write-spec
+  - action-tracker
+  - thumbnail-title-brief
+  - publishing-checklist
+  - prompt-injection-review
+  - performance-test-plan
+  - prompt-regression-testing
+  - brand-pitch
+  - media-kit-builder
+  - sponsorship-package
+  - rate-card-builder
+  - campaign-proposal
+  - usage-rights-checklist
+  - deal-negotiation-prep
+  - deliverables-tracker
+  - campaign-recap
+  - renewal-pitch
 mcp_presets:
   - docs-research
   - browser-qa
   - full
 agents_file: agents/AGENTS.full.md
-

@@ -1,0 +1,14 @@
+name: product-research
+description: Product research workflows for feedback synthesis, PRDs, customer evidence, competitive research, experiments, analytics, and product decisions.
+skills:
+  - feedback-synthesis
+  - write-spec
+  - product-brainstorming-planning
+  - customer-research-validation
+  - competitive-market-research
+  - experiment-design-validation
+  - product-analytics-instrumentation
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.product-research.md

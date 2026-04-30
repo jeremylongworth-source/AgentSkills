@@ -1,0 +1,19 @@
+name: revenue-growth
+description: Revenue growth workflows for positioning, account research, outreach, sales conversion, campaigns, lifecycle, pricing, analytics, and experiments.
+skills:
+  - growth-strategy-orchestration
+  - marketing-positioning-strategy
+  - account-based-marketing
+  - competitive-market-research
+  - sales-prospecting-outreach
+  - sales-conversion-enablement
+  - content-seo-strategy
+  - lifecycle-crm-email
+  - paid-media-growth
+  - pricing-packaging-strategy
+  - marketing-analytics-attribution
+  - experiment-design-validation
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.revenue-growth.md

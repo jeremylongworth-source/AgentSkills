@@ -1,0 +1,20 @@
+name: quality-testing
+description: Quality and testing workflows for unit, integration, E2E, bug reproduction, QA matrices, accessibility tests, performance tests, regression checks, and release gates.
+skills:
+  - unit-test-generation
+  - integration-test-plan
+  - e2e-test-plan
+  - bug-reproduction
+  - qa-matrix
+  - accessibility-test-plan
+  - performance-test-plan
+  - qa-test-strategy
+  - regression-check
+  - backend-test-plan
+  - accessibility-inclusive-design
+  - release-launch-readiness
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+  - browser-qa
+agents_file: agents/AGENTS.quality-testing.md

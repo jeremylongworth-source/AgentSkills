@@ -1,0 +1,14 @@
+name: engineering-delivery
+description: Engineering workflow support for issue planning, PR review, regression checks, release risk, QA, and launch readiness.
+skills:
+  - issue-to-plan
+  - pr-review
+  - regression-check
+  - release-risk
+  - qa-test-strategy
+  - release-launch-readiness
+  - product-brainstorming-planning
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.engineering-delivery.md

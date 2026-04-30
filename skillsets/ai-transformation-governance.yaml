@@ -1,0 +1,17 @@
+name: ai-transformation-governance
+description: Executive AI transformation workflows for use-case portfolios, pilot selection, AI risk, vendor evaluation, governance, adoption, and pilot-to-scale roadmaps.
+skills:
+  - ai-use-case-portfolio
+  - ai-pilot-selection
+  - ai-risk-register
+  - ai-vendor-evaluation
+  - ai-governance-checklist
+  - ai-adoption-plan
+  - pilot-to-scale-roadmap
+  - experiment-design-validation
+  - product-analytics-instrumentation
+  - skill-evaluation-iteration
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.ai-transformation-governance.md

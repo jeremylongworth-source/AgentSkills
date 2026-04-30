@@ -1,0 +1,19 @@
+name: data-analytics-bi
+description: Data analytics and BI workflows for metric definitions, dashboard specs, cohort, funnel, retention, SQL analysis plans, experiment readouts, and analytics instrumentation.
+skills:
+  - metric-definition
+  - dashboard-design
+  - cohort-analysis
+  - funnel-analysis
+  - retention-analysis
+  - sql-analysis-plan
+  - experiment-readout
+  - analytics-instrumentation-plan
+  - metric-narrative
+  - product-analytics-instrumentation
+  - marketing-analytics-attribution
+  - experiment-design-validation
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.data-analytics-bi.md

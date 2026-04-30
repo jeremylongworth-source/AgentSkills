@@ -1,0 +1,22 @@
+name: creator-community
+description: Creator community workflows for comment and DM triage, moderation review, audience feedback synthesis, polls, engagement planning, event prompts, and reviewed replies.
+skills:
+  - community-triage
+  - community-moderation-brief
+  - reply-drafting
+  - ticket-triage
+  - escalation-pack
+  - feedback-synthesis
+  - customer-research-validation
+  - experiment-design-validation
+  - content-pillars
+  - caption-writer
+  - content-calendar
+  - publishing-checklist
+  - metric-definition
+  - metric-narrative
+  - creator-content-performance-review
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.creator-community.md

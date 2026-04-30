@@ -1,0 +1,20 @@
+name: creator-reputation-risk
+description: Creator reputation risk workflows for sponsored disclosure checks, AI labeling, rights and copyright risk, platform-policy uncertainty, brand safety, controversy response briefs, and hold/revise/go recommendations.
+skills:
+  - creator-reputation-risk-review
+  - publishing-checklist
+  - caption-writer
+  - usage-rights-checklist
+  - community-triage
+  - community-moderation-brief
+  - reply-drafting
+  - escalation-pack
+  - risk-register
+  - ai-risk-register
+  - ai-governance-checklist
+  - campaign-proposal
+  - sponsorship-package
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.creator-reputation-risk.md

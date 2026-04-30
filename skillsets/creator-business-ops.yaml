@@ -1,0 +1,26 @@
+name: creator-business-ops
+description: Creator business operations workflows for weekly ops reviews, sponsor pipeline hygiene, invoice readiness, production ops, contractor handoffs, asset checklists, SOPs, and operating dashboards.
+skills:
+  - creator-invoice-readiness
+  - creator-production-ops-brief
+  - owner-dashboard
+  - cash-flow-triage
+  - finance-close-checklist
+  - pricing-margin-review
+  - ops-bottleneck-review
+  - vendor-negotiation-prep
+  - action-tracker
+  - deliverables-tracker
+  - sales-pipeline-management
+  - dashboard-design
+  - metric-definition
+  - metric-narrative
+  - variance-commentary
+  - kb-from-resolution
+  - tutorial-writing
+  - usage-rights-checklist
+  - brand-pitch
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.creator-business-ops.md

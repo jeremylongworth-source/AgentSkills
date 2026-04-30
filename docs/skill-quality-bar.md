@@ -11,3 +11,7 @@ A skill is ready when it meets these checks:
 - validates with the official skill validator
 - is mentioned in account routing when globally relevant
 
+For bundle promotion and release review, use the
+[evaluation method](evaluation/evaluation-method.md),
+[skill quality rubric](evaluation/skill-quality-rubric.md), and
+[security review template](evaluation/security-review-template.md).

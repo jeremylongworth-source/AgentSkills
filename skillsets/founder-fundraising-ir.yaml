@@ -1,0 +1,17 @@
+name: founder-fundraising-ir
+description: Founder fundraising and investor relations workflows for investor updates, fundraising narratives, pitch decks, data rooms, and diligence responses.
+skills:
+  - investor-update
+  - fundraising-narrative
+  - pitch-deck-structure
+  - data-room-checklist
+  - diligence-response-prep
+  - executive-briefing
+  - metric-narrative
+  - variance-commentary
+  - growth-strategy-orchestration
+  - marketing-positioning-strategy
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.founder-fundraising-ir.md

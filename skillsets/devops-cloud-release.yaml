@@ -1,0 +1,17 @@
+name: devops-cloud-release
+description: DevOps and release workflows for deployment plans, CI workflows, containerization, environment config, rollback, cloud cost, production readiness, and release gates.
+skills:
+  - deployment-plan
+  - ci-workflow-plan
+  - containerization-plan
+  - environment-config-review
+  - rollback-plan
+  - cloud-cost-review
+  - production-readiness-review
+  - release-risk
+  - release-launch-readiness
+  - skill-threat-model
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.devops-cloud-release.md

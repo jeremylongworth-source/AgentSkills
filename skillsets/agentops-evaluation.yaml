@@ -1,0 +1,15 @@
+name: agentops-evaluation
+description: Skill and bundle evaluation workflows for benchmark design, scenario tests, before/after reports, prompt regression, scoring, and context overhead review.
+skills:
+  - skill-benchmark-design
+  - scenario-test-authoring
+  - before-after-evaluation
+  - acceptance-criteria-mapper
+  - prompt-regression-testing
+  - skill-output-scoring
+  - skill-token-overhead-review
+  - skill-evaluation-iteration
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.agentops-evaluation.md

@@ -7,7 +7,13 @@ Prompt:
 Expected routing:
 
 - react-next-performance-optimization
-- visual-ui-ux-audit if screenshots or UI behavior matter
-- tailwind-design-system if Tailwind classes are involved
-- qa-test-strategy for regression checks
+- visual-ui-ux-audit
+- tailwind-design-system
+- qa-test-strategy
 
+Notes:
+
+- `visual-ui-ux-audit` matters when screenshots or UI behavior are part of the
+  evidence.
+- `tailwind-design-system` matters when Tailwind classes are involved.
+- `qa-test-strategy` defines regression checks.

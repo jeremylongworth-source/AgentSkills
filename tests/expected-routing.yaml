@@ -28,4 +28,562 @@ skill-improvement:
   - skill-evaluation-iteration
   - sales-conversion-enablement
   - concise-technical-writing
-
+executive-weekly-brief:
+  - executive-briefing
+  - metric-narrative
+  - risk-register
+  - action-tracker
+  - concise-technical-writing
+executive-decision-memo:
+  - decision-memo
+  - product-brainstorming-planning
+  - metric-narrative
+  - risk-register
+  - action-tracker
+executive-risk-register:
+  - risk-register
+  - executive-briefing
+  - action-tracker
+  - concise-technical-writing
+executive-action-tracker:
+  - action-tracker
+  - decision-memo
+  - risk-register
+  - concise-technical-writing
+founder-investor-update:
+  - investor-update
+  - metric-narrative
+  - executive-briefing
+  - risk-register
+  - concise-technical-writing
+founder-fundraising-narrative:
+  - fundraising-narrative
+  - pitch-deck-structure
+  - marketing-positioning-strategy
+  - metric-narrative
+  - concise-technical-writing
+founder-data-room-checklist:
+  - data-room-checklist
+  - diligence-response-prep
+  - metric-narrative
+  - concise-technical-writing
+founder-diligence-response:
+  - diligence-response-prep
+  - data-room-checklist
+  - metric-narrative
+  - concise-technical-writing
+ai-use-case-portfolio:
+  - ai-use-case-portfolio
+  - ai-pilot-selection
+  - ai-risk-register
+  - concise-technical-writing
+ai-pilot-selection:
+  - ai-pilot-selection
+  - experiment-design-validation
+  - product-analytics-instrumentation
+  - ai-governance-checklist
+  - concise-technical-writing
+ai-governance-readiness:
+  - ai-governance-checklist
+  - ai-risk-register
+  - ai-vendor-evaluation
+  - concise-technical-writing
+ai-pilot-to-scale:
+  - pilot-to-scale-roadmap
+  - ai-adoption-plan
+  - ai-governance-checklist
+  - ai-risk-register
+  - concise-technical-writing
+owner-dashboard:
+  - owner-dashboard
+  - metric-narrative
+  - variance-commentary
+  - action-tracker
+  - concise-technical-writing
+owner-cash-flow-triage:
+  - cash-flow-triage
+  - owner-dashboard
+  - variance-commentary
+  - concise-technical-writing
+owner-pricing-margin-review:
+  - pricing-margin-review
+  - pricing-packaging-strategy
+  - metric-narrative
+  - concise-technical-writing
+owner-vendor-ops-review:
+  - vendor-negotiation-prep
+  - ops-bottleneck-review
+  - owner-dashboard
+  - concise-technical-writing
+operating-weekly-leadership:
+  - executive-briefing
+  - decision-memo
+  - risk-register
+  - action-tracker
+  - concise-technical-writing
+operating-okr-review:
+  - metric-narrative
+  - variance-commentary
+  - executive-briefing
+  - risk-register
+  - action-tracker
+operating-monthly-business-review:
+  - executive-briefing
+  - metric-narrative
+  - variance-commentary
+  - decision-memo
+  - action-tracker
+support-ticket-triage-draft:
+  - ticket-triage
+  - escalation-pack
+  - reply-drafting
+  - concise-technical-writing
+support-security-escalation:
+  - ticket-triage
+  - escalation-pack
+  - reply-drafting
+  - concise-technical-writing
+support-kb-from-resolution:
+  - kb-from-resolution
+  - concise-technical-writing
+engineering-issue-plan:
+  - issue-to-plan
+  - regression-check
+  - qa-test-strategy
+  - release-risk
+  - concise-technical-writing
+engineering-pr-review:
+  - pr-review
+  - regression-check
+  - qa-test-strategy
+  - concise-technical-writing
+engineering-release-risk:
+  - release-risk
+  - regression-check
+  - release-launch-readiness
+  - concise-technical-writing
+product-feedback-prd:
+  - feedback-synthesis
+  - write-spec
+  - product-brainstorming-planning
+  - customer-research-validation
+  - experiment-design-validation
+  - product-analytics-instrumentation
+  - concise-technical-writing
+product-spec-review:
+  - write-spec
+  - product-analytics-instrumentation
+  - experiment-design-validation
+  - concise-technical-writing
+revenue-account-outreach:
+  - growth-strategy-orchestration
+  - account-based-marketing
+  - competitive-market-research
+  - sales-prospecting-outreach
+  - sales-conversion-enablement
+  - concise-technical-writing
+revenue-campaign-brief:
+  - growth-strategy-orchestration
+  - marketing-positioning-strategy
+  - content-seo-strategy
+  - paid-media-growth
+  - marketing-analytics-attribution
+  - experiment-design-validation
+analytics-kpi-narrative:
+  - metric-narrative
+  - variance-commentary
+  - product-analytics-instrumentation
+  - marketing-analytics-attribution
+  - concise-technical-writing
+finance-close-checklist:
+  - finance-close-checklist
+  - variance-commentary
+  - metric-narrative
+  - concise-technical-writing
+agentops-skill-benchmark:
+  - skill-benchmark-design
+  - scenario-test-authoring
+  - acceptance-criteria-mapper
+  - skill-output-scoring
+agentops-before-after-report:
+  - before-after-evaluation
+  - skill-output-scoring
+  - skill-token-overhead-review
+  - concise-technical-writing
+agentops-prompt-regression:
+  - prompt-regression-testing
+  - scenario-test-authoring
+  - acceptance-criteria-mapper
+agentops-overhead-review:
+  - skill-token-overhead-review
+  - before-after-evaluation
+  - skill-output-scoring
+skill-security-third-party-install:
+  - skill-threat-model
+  - prompt-injection-review
+  - data-exfiltration-review
+  - supply-chain-review
+  - safe-install-checklist
+skill-security-script-review:
+  - script-permission-review
+  - supply-chain-review
+  - secrets-handling-review
+  - safe-install-checklist
+skill-security-publish-review:
+  - skill-threat-model
+  - prompt-injection-review
+  - data-exfiltration-review
+  - secrets-handling-review
+  - safe-install-checklist
+skill-security-mcp-scope:
+  - skill-threat-model
+  - data-exfiltration-review
+  - script-permission-review
+  - safe-install-checklist
+docs-readme-upgrade:
+  - readme-upgrade
+  - concise-technical-writing
+docs-api-reference:
+  - api-doc-writing
+  - acceptance-criteria-mapper
+  - concise-technical-writing
+docs-release-changelog:
+  - release-notes
+  - changelog-maintenance
+  - concise-technical-writing
+docs-migration-onboarding:
+  - migration-guide
+  - developer-onboarding
+  - tutorial-writing
+  - concise-technical-writing
+backend-api-contract:
+  - api-contract-design
+  - error-handling-contracts
+  - api-doc-writing
+  - backend-test-plan
+backend-schema-review:
+  - database-schema-review
+  - backend-test-plan
+  - skill-threat-model
+  - concise-technical-writing
+backend-auth-flow:
+  - auth-flow-design
+  - error-handling-contracts
+  - backend-test-plan
+  - skill-threat-model
+backend-service-boundary:
+  - service-boundary-design
+  - database-schema-review
+  - backend-test-plan
+  - release-risk
+backend-rate-limit-plan:
+  - rate-limit-design
+  - error-handling-contracts
+  - backend-test-plan
+  - skill-threat-model
+devops-deployment-runbook:
+  - deployment-plan
+  - rollback-plan
+  - production-readiness-review
+  - release-risk
+devops-ci-container:
+  - ci-workflow-plan
+  - containerization-plan
+  - environment-config-review
+  - backend-test-plan
+devops-config-rollback:
+  - environment-config-review
+  - rollback-plan
+  - production-readiness-review
+  - secrets-handling-review
+devops-cloud-cost:
+  - cloud-cost-review
+  - ci-workflow-plan
+  - environment-config-review
+  - concise-technical-writing
+devops-production-readiness:
+  - production-readiness-review
+  - release-launch-readiness
+  - skill-threat-model
+  - rollback-plan
+quality-unit-integration:
+  - unit-test-generation
+  - integration-test-plan
+  - backend-test-plan
+  - qa-test-strategy
+quality-e2e-qa-matrix:
+  - e2e-test-plan
+  - qa-matrix
+  - regression-check
+  - release-launch-readiness
+quality-bug-reproduction:
+  - bug-reproduction
+  - regression-check
+  - integration-test-plan
+  - concise-technical-writing
+quality-accessibility-performance:
+  - accessibility-test-plan
+  - performance-test-plan
+  - accessibility-inclusive-design
+  - qa-matrix
+quality-release-risk:
+  - qa-test-strategy
+  - qa-matrix
+  - performance-test-plan
+  - release-launch-readiness
+data-metric-dashboard:
+  - metric-definition
+  - dashboard-design
+  - metric-narrative
+  - concise-technical-writing
+data-funnel-cohort:
+  - funnel-analysis
+  - cohort-analysis
+  - sql-analysis-plan
+  - analytics-instrumentation-plan
+data-retention-analysis:
+  - retention-analysis
+  - cohort-analysis
+  - metric-definition
+  - sql-analysis-plan
+data-experiment-readout:
+  - experiment-readout
+  - experiment-design-validation
+  - metric-narrative
+  - concise-technical-writing
+data-instrumentation-plan:
+  - analytics-instrumentation-plan
+  - product-analytics-instrumentation
+  - funnel-analysis
+  - metric-definition
+creator-content-pillars-calendar:
+  - content-pillars
+  - content-calendar
+  - short-form-hooks
+  - caption-writer
+creator-short-video-script:
+  - short-form-hooks
+  - video-script
+  - caption-writer
+  - publishing-checklist
+creator-youtube-brief:
+  - thumbnail-title-brief
+  - video-script
+  - longform-to-shorts
+  - publishing-checklist
+creator-longform-repurpose:
+  - longform-to-shorts
+  - newsletter-repurpose
+  - caption-writer
+  - podcast-outline
+creator-publishing-checklist:
+  - publishing-checklist
+  - caption-writer
+  - thumbnail-title-brief
+  - concise-technical-writing
+creator-brand-pitch-media-kit:
+  - brand-pitch
+  - media-kit-builder
+  - sponsorship-package
+  - concise-technical-writing
+creator-rate-card-package:
+  - rate-card-builder
+  - sponsorship-package
+  - usage-rights-checklist
+  - campaign-proposal
+creator-sponsor-proposal:
+  - campaign-proposal
+  - deliverables-tracker
+  - usage-rights-checklist
+  - brand-pitch
+creator-negotiation-prep:
+  - deal-negotiation-prep
+  - usage-rights-checklist
+  - rate-card-builder
+  - sales-conversion-enablement
+creator-campaign-recap-renewal:
+  - campaign-recap
+  - renewal-pitch
+  - deliverables-tracker
+  - concise-technical-writing
+creator-sponsor-performance-report:
+  - campaign-recap
+  - metric-narrative
+  - deliverables-tracker
+  - renewal-pitch
+creator-watch-time-review:
+  - creator-content-performance-review
+  - retention-analysis
+  - metric-narrative
+  - concise-technical-writing
+creator-audience-growth-review:
+  - metric-narrative
+  - cohort-analysis
+  - retention-analysis
+  - marketing-analytics-attribution
+creator-affiliate-performance-report:
+  - affiliate-performance-report
+  - marketing-analytics-attribution
+  - funnel-analysis
+  - concise-technical-writing
+creator-content-experiment-readout:
+  - experiment-readout
+  - experiment-design-validation
+  - creator-content-performance-review
+  - concise-technical-writing
+creator-reporting-dashboard-spec:
+  - dashboard-design
+  - metric-definition
+  - analytics-instrumentation-plan
+  - creator-content-performance-review
+creator-offer-ladder:
+  - creator-offer-ladder
+  - pricing-packaging-strategy
+  - marketing-positioning-strategy
+  - concise-technical-writing
+creator-owned-product-launch:
+  - creator-owned-product-launch-plan
+  - content-calendar
+  - pricing-packaging-strategy
+  - publishing-checklist
+  - experiment-design-validation
+creator-membership-community-pricing:
+  - creator-offer-ladder
+  - pricing-packaging-strategy
+  - retention-analysis
+  - metric-definition
+creator-merch-margin-review:
+  - pricing-margin-review
+  - pricing-packaging-strategy
+  - cash-flow-triage
+  - owner-dashboard
+creator-affiliate-monetization-review:
+  - affiliate-performance-report
+  - marketing-analytics-attribution
+  - funnel-analysis
+  - publishing-checklist
+creator-monetization-dashboard:
+  - dashboard-design
+  - metric-definition
+  - metric-narrative
+  - affiliate-performance-report
+  - owner-dashboard
+creator-weekly-ops-dashboard:
+  - owner-dashboard
+  - metric-narrative
+  - action-tracker
+  - ops-bottleneck-review
+creator-sponsor-pipeline-review:
+  - sales-pipeline-management
+  - deliverables-tracker
+  - brand-pitch
+  - action-tracker
+creator-invoice-readiness:
+  - creator-invoice-readiness
+  - deliverables-tracker
+  - cash-flow-triage
+  - finance-close-checklist
+creator-production-budget-review:
+  - creator-production-ops-brief
+  - pricing-margin-review
+  - cash-flow-triage
+  - variance-commentary
+creator-assistant-contractor-handoff:
+  - creator-production-ops-brief
+  - ops-bottleneck-review
+  - vendor-negotiation-prep
+  - tutorial-writing
+creator-asset-library-checklist:
+  - creator-production-ops-brief
+  - kb-from-resolution
+  - usage-rights-checklist
+  - concise-technical-writing
+creator-comment-dm-triage:
+  - community-triage
+  - reply-drafting
+  - community-moderation-brief
+  - concise-technical-writing
+creator-community-feedback-synthesis:
+  - feedback-synthesis
+  - customer-research-validation
+  - content-pillars
+  - concise-technical-writing
+creator-community-poll-plan:
+  - customer-research-validation
+  - experiment-design-validation
+  - caption-writer
+creator-moderation-escalation:
+  - community-moderation-brief
+  - ticket-triage
+  - escalation-pack
+creator-community-engagement-plan:
+  - content-calendar
+  - caption-writer
+  - publishing-checklist
+  - metric-definition
+creator-community-event-plan:
+  - content-calendar
+  - community-triage
+  - publishing-checklist
+  - metric-narrative
+creator-sponsored-post-disclosure-review:
+  - publishing-checklist
+  - caption-writer
+  - usage-rights-checklist
+  - creator-reputation-risk-review
+creator-ai-content-labeling-review:
+  - creator-reputation-risk-review
+  - publishing-checklist
+  - ai-risk-register
+  - ai-governance-checklist
+creator-copyright-rights-risk-review:
+  - usage-rights-checklist
+  - publishing-checklist
+  - creator-reputation-risk-review
+  - escalation-pack
+creator-brand-safety-campaign-review:
+  - creator-reputation-risk-review
+  - campaign-proposal
+  - sponsorship-package
+  - usage-rights-checklist
+creator-controversy-response-brief:
+  - community-triage
+  - community-moderation-brief
+  - risk-register
+  - escalation-pack
+  - reply-drafting
+creator-platform-policy-risk-check:
+  - publishing-checklist
+  - community-moderation-brief
+  - creator-reputation-risk-review
+creator-ai-content-workflow:
+  - content-calendar
+  - creator-production-ops-brief
+  - ai-media-prompt-brief
+  - publishing-checklist
+  - ai-governance-checklist
+creator-ai-image-prompt-pack:
+  - ai-media-prompt-brief
+  - usage-rights-checklist
+  - creator-reputation-risk-review
+  - concise-technical-writing
+creator-ai-video-prompt-brief:
+  - video-script
+  - ai-media-prompt-brief
+  - publishing-checklist
+  - creator-reputation-risk-review
+creator-ai-audio-voiceover-plan:
+  - video-script
+  - podcast-outline
+  - ai-media-prompt-brief
+  - usage-rights-checklist
+creator-synthetic-character-bible:
+  - synthetic-character-bible
+  - ai-risk-register
+  - ai-governance-checklist
+  - creator-reputation-risk-review
+creator-ai-batch-production-plan:
+  - creator-production-ops-brief
+  - content-calendar
+  - ai-media-prompt-brief
+  - publishing-checklist

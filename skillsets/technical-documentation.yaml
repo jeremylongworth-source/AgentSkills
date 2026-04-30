@@ -1,0 +1,15 @@
+name: technical-documentation
+description: Technical documentation workflows for READMEs, API docs, release notes, changelogs, architecture docs, migration guides, onboarding, and tutorials.
+skills:
+  - readme-upgrade
+  - api-doc-writing
+  - release-notes
+  - changelog-maintenance
+  - architecture-docs
+  - migration-guide
+  - developer-onboarding
+  - tutorial-writing
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.technical-documentation.md

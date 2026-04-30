@@ -1,0 +1,22 @@
+name: creator-analytics-reporting
+description: Creator analytics workflows for sponsor performance reports, content performance reviews, audience growth, affiliate reporting, content experiments, dashboards, attribution, and instrumentation.
+skills:
+  - creator-content-performance-review
+  - affiliate-performance-report
+  - campaign-recap
+  - renewal-pitch
+  - deliverables-tracker
+  - metric-definition
+  - metric-narrative
+  - dashboard-design
+  - retention-analysis
+  - cohort-analysis
+  - funnel-analysis
+  - experiment-readout
+  - experiment-design-validation
+  - marketing-analytics-attribution
+  - analytics-instrumentation-plan
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.creator-analytics-reporting.md

@@ -1,0 +1,18 @@
+name: creator-content-engine
+description: Creator content workflows for content pillars, short-form hooks, video scripts, thumbnail/title briefs, captions, calendars, repurposing, newsletters, podcasts, and publishing checks.
+skills:
+  - content-pillars
+  - short-form-hooks
+  - video-script
+  - thumbnail-title-brief
+  - caption-writer
+  - content-calendar
+  - longform-to-shorts
+  - newsletter-repurpose
+  - podcast-outline
+  - publishing-checklist
+  - content-seo-strategy
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.creator-content-engine.md

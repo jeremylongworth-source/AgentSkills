@@ -1,0 +1,13 @@
+name: support-success
+description: Support and customer success workflows for ticket triage, reply drafting, escalations, KB articles, customer evidence, and support metrics.
+skills:
+  - ticket-triage
+  - reply-drafting
+  - escalation-pack
+  - kb-from-resolution
+  - customer-research-validation
+  - product-analytics-instrumentation
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.support-success.md

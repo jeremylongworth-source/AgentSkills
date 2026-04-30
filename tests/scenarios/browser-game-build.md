@@ -6,7 +6,7 @@ Prompt:
 
 Expected routing:
 
-- product-brainstorming-planning if concept is vague
+- product-brainstorming-planning
 - game-skill-orchestration
 - game-phaser-development
 - game-sprite-design
@@ -18,3 +18,7 @@ Expected routing:
 - qa-test-strategy
 - release-launch-readiness
 
+Notes:
+
+- `product-brainstorming-planning` is most important when the game concept is
+  still vague.

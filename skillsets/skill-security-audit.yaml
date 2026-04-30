@@ -1,0 +1,14 @@
+name: skill-security-audit
+description: Review-only security workflows for auditing agent skills before install or publish, including threat models, prompt injection, data exfiltration, scripts, supply chain, secrets, and safe install checks.
+skills:
+  - skill-threat-model
+  - prompt-injection-review
+  - data-exfiltration-review
+  - script-permission-review
+  - supply-chain-review
+  - secrets-handling-review
+  - safe-install-checklist
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.skill-security-audit.md

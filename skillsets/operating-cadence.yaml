@@ -1,0 +1,14 @@
+name: operating-cadence
+description: Leadership operating rhythm workflows for weekly meetings, OKR reviews, decision registers, escalation tracking, MBRs, and quarterly planning.
+skills:
+  - executive-briefing
+  - decision-memo
+  - risk-register
+  - action-tracker
+  - metric-narrative
+  - variance-commentary
+  - product-brainstorming-planning
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.operating-cadence.md

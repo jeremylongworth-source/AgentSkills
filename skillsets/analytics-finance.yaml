@@ -1,0 +1,14 @@
+name: analytics-finance
+description: Read-first analytics and finance workflows for KPI narratives, variance commentary, close checklists, metric definitions, data quality, and reviewed reporting.
+skills:
+  - metric-narrative
+  - variance-commentary
+  - finance-close-checklist
+  - product-analytics-instrumentation
+  - marketing-analytics-attribution
+  - experiment-design-validation
+  - pricing-packaging-strategy
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.analytics-finance.md

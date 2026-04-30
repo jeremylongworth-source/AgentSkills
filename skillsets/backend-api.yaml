@@ -1,0 +1,17 @@
+name: backend-api
+description: Backend and API design workflows for API contracts, database schemas, auth flows, service boundaries, error contracts, rate limits, API docs, and backend test plans.
+skills:
+  - api-contract-design
+  - database-schema-review
+  - auth-flow-design
+  - service-boundary-design
+  - error-handling-contracts
+  - rate-limit-design
+  - api-doc-writing
+  - backend-test-plan
+  - skill-threat-model
+  - qa-test-strategy
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.backend-api.md

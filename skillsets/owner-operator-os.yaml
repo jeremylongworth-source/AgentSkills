@@ -1,0 +1,16 @@
+name: owner-operator-os
+description: Practical owner-operator workflows for dashboards, cash-flow triage, pricing and margin review, vendor negotiation, and operations bottlenecks.
+skills:
+  - owner-dashboard
+  - cash-flow-triage
+  - pricing-margin-review
+  - vendor-negotiation-prep
+  - ops-bottleneck-review
+  - action-tracker
+  - metric-narrative
+  - variance-commentary
+  - pricing-packaging-strategy
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.owner-operator-os.md

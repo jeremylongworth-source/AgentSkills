@@ -1,0 +1,31 @@
+name: creator-monetization
+description: Creator monetization workflows for offer ladders, owned-product launches, pricing, merch margin review, memberships, paid communities, affiliates, dashboards, and validation.
+skills:
+  - creator-offer-ladder
+  - creator-owned-product-launch-plan
+  - pricing-packaging-strategy
+  - pricing-margin-review
+  - affiliate-performance-report
+  - marketing-analytics-attribution
+  - metric-definition
+  - metric-narrative
+  - dashboard-design
+  - funnel-analysis
+  - retention-analysis
+  - content-calendar
+  - caption-writer
+  - publishing-checklist
+  - content-seo-strategy
+  - owner-dashboard
+  - cash-flow-triage
+  - rate-card-builder
+  - sponsorship-package
+  - campaign-recap
+  - renewal-pitch
+  - experiment-design-validation
+  - experiment-readout
+  - marketing-positioning-strategy
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.creator-monetization.md

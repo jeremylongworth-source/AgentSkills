@@ -1,0 +1,20 @@
+name: creator-brand-deals
+description: Creator sponsorship workflows for brand pitches, media kits, sponsorship packages, rate cards, campaign proposals, usage-rights review, negotiation prep, deliverable tracking, recaps, and renewals.
+skills:
+  - brand-pitch
+  - media-kit-builder
+  - sponsorship-package
+  - rate-card-builder
+  - campaign-proposal
+  - usage-rights-checklist
+  - deal-negotiation-prep
+  - deliverables-tracker
+  - campaign-recap
+  - renewal-pitch
+  - caption-writer
+  - marketing-positioning-strategy
+  - sales-conversion-enablement
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.creator-brand-deals.md

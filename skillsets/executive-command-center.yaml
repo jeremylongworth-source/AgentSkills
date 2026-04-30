@@ -1,0 +1,15 @@
+name: executive-command-center
+description: Executive operating workflows for weekly briefs, decision memos, risk registers, action tracking, metrics, and leadership follow-through.
+skills:
+  - executive-briefing
+  - decision-memo
+  - risk-register
+  - action-tracker
+  - product-brainstorming-planning
+  - metric-narrative
+  - variance-commentary
+  - feedback-synthesis
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.executive-command-center.md

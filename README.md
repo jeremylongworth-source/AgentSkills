@@ -1,56 +1,144 @@
 # AgentSkills
 
-Portable Codex skillsets for installing domain-specific agent capabilities.
+Portable Agent Skills, skillsets, MCP presets, and routing templates for AI coding agents.
 
-This repo stores atomic skills under `skills/` and installable bundles under `skillsets/`. A user can install a single themed skillset, merge MCP server presets, and apply account-level routing instructions.
+## Why this exists
 
-## Layout
+Most AI coding agents improve when they are given reusable domain-specific operating instructions. AgentSkills packages those instructions into installable skillsets for Codex, GitHub Copilot, Cursor, Claude Code, Gemini CLI, and related tools.
 
-```text
-skills/       Atomic Codex skills. Each folder contains SKILL.md, agents/openai.yaml, and references/.
-skillsets/    Bundle manifests that list skills, MCP presets, and routing templates.
-mcp/          Reusable MCP server config snippets and presets.
-agents/       Account-level AGENTS.md routing templates.
-scripts/      Install and validation helpers.
-tests/        Scenario prompts for evaluating routing and skill behavior.
-docs/         Authoring and operating guidance.
-```
-
-## Install A Skillset
-
-From PowerShell:
+## Quick install
 
 ```powershell
 .\scripts\install-skillset.ps1 game-dev
 ```
 
-By default this copies skills into `$env:USERPROFILE\.codex\skills`, appends MCP config snippets to `$env:USERPROFILE\.codex\config.toml` if they are missing, and appends routing guidance to `$env:USERPROFILE\.codex\AGENTS.md`.
+## Available skillsets
 
-Validate the repo:
+| Skillset | Best for |
+|---|---|
+| `game-dev` | Game design, implementation, QA, launch |
+| `html5-game-publishing` | Phaser, Three.js, itch.io, browser QA |
+| `sales-marketing` | GTM, positioning, paid media, lifecycle |
+| `frontend-product` | React, Tailwind, UX, accessibility |
+| `research-validation` | Competitive research, experiments, analytics |
+| `llm-skill-authoring` | Creating and validating new agent skills |
 
-```powershell
-.\scripts\validate-skills.ps1
+## Who this is for
+
+- Developers using Codex, GitHub Copilot, Cursor, Claude Code, Gemini CLI, or similar AI coding agents
+- Builders who want reusable AI-agent workflows instead of rewriting the same instructions for every project
+- Teams experimenting with MCP-backed specialist agents
+- Game, frontend, product, marketing, and research workflows
+
+## What is included
+
+- Atomic skills under `skills/`
+- Installable skillsets under `skillsets/`
+- MCP presets for tool-aware workflows
+- `AGENTS.md` routing templates
+- Validation scripts
+- Scenario tests
+- Documentation for creating and extending skillsets
+
+## Example use cases
+
+Use AgentSkills when you want an AI coding agent to behave more like a specialist:
+
+- Build and QA an HTML5 game
+- Plan and implement a Three.js interactive page
+- Prepare a product launch workflow
+- Run structured competitive research
+- Create a repeatable frontend/product implementation workflow
+- Author new reusable agent skills
+
+## Repository structure
+
+```text
+AgentSkills/
+├─ skills/
+├─ skillsets/
+├─ mcp/
+├─ agents/
+├─ scripts/
+├─ tests/
+└─ docs/
 ```
 
-## Skillsets
+## Getting started
 
-- `game-dev`: game design, implementation, assets, audio, UI, playtesting, publishing, QA, launch.
-- `html5-game-publishing`: Phaser, Three.js, sprite design, itch.io publishing, browser QA.
-- `sales-marketing`: GTM, positioning, pipeline, outbound, paid media, lifecycle, analytics, ABM.
-- `frontend-product`: brainstorming, React/Next performance, Tailwind, visual audit, accessibility, analytics, QA, release.
-- `research-validation`: customer research, competitive research, experiments, product analytics.
-- `llm-skill-authoring`: skill creation, evaluation, iteration, concise writing, OpenAI docs routing.
-- `all`: everything in the repo.
+1. Clone the repository.
 
-## Quality Bar
+```powershell
+git clone https://github.com/jeremylongworth-source/AgentSkills.git
+cd AgentSkills
+```
 
-Each skill should have:
+2. Install a skillset.
 
-- precise frontmatter `description`
-- concise `SKILL.md`
-- `agents/openai.yaml`
-- at least one reference/checklist
-- output contract or deliverable shape
-- freshness rule when platform, legal, model, or API guidance changes quickly
-- no scaffold TODOs
+```powershell
+.\scripts\install-skillset.ps1 game-dev
+```
 
+3. Review the installed instructions before using them with your agent.
+
+4. Start your coding agent with the relevant skillset active.
+
+## Suggested first skillset
+
+For game development or interactive browser work, start with:
+
+```powershell
+.\scripts\install-skillset.ps1 game-dev
+```
+
+For browser game publishing workflows, use:
+
+```powershell
+.\scripts\install-skillset.ps1 html5-game-publishing
+```
+
+## Supported agent workflows
+
+AgentSkills is intended for workflows involving:
+
+- OpenAI Codex
+- GitHub Copilot
+- Cursor
+- Claude Code
+- Gemini CLI
+- MCP-enabled agent systems
+- Other coding agents that can read project instructions and reusable skill files
+
+Exact host support may vary depending on how each tool loads instructions, skills, and workspace context.
+
+## Roadmap
+
+Planned improvements include:
+
+- More install examples for Windows, macOS, and Linux
+- More host-specific setup guides
+- Additional skillsets for game development, frontend apps, marketing, research, and product workflows
+- More MCP presets
+- Validation improvements
+- Example projects showing before and after agent behavior
+
+## Contributing
+
+Contributions are welcome.
+
+Good first contributions include:
+
+- Adding setup instructions for your preferred coding agent
+- Improving install scripts
+- Adding examples
+- Adding tests
+- Proposing new skillsets
+- Improving existing skill instructions
+
+## License
+
+MIT
+
+## Star the repo
+
+If AgentSkills helps your AI development workflow, star the repo so other builders can find it.

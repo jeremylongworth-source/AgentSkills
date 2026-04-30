@@ -13,6 +13,23 @@ if ([string]::IsNullOrWhiteSpace($RepoRoot)) {
   $RepoRoot = (Resolve-Path $RepoRoot).Path
 }
 
+function Find-PowerShellHost {
+  $pwsh = Get-Command pwsh -ErrorAction SilentlyContinue
+  if ($pwsh) { return $pwsh.Source }
+
+  $windowsPowerShell = Get-Command powershell.exe -ErrorAction SilentlyContinue
+  if ($windowsPowerShell) { return $windowsPowerShell.Source }
+
+  throw "PowerShell host not found. Install PowerShell 7 or Windows PowerShell."
+}
+
+function Test-IsWindowsPlatform {
+  return ($PSVersionTable.PSVersion.Major -lt 6) -or
+    [System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform(
+      [System.Runtime.InteropServices.OSPlatform]::Windows
+    )
+}
+
 function Find-GitHubCli {
   if (-not [string]::IsNullOrWhiteSpace($GhPath)) {
     if (-not (Test-Path $GhPath)) { throw "GitHub CLI not found: $GhPath" }
@@ -26,6 +43,23 @@ function Find-GitHubCli {
   if (Test-Path $fallback) { return $fallback }
 
   throw "GitHub CLI not found. Install gh or pass -GhPath."
+}
+
+$PowerShellHost = Find-PowerShellHost
+
+function Invoke-PowerShellFile {
+  param(
+    [string]$Path,
+    [string[]]$Arguments = @()
+  )
+
+  $psArgs = @('-NoProfile')
+  if (Test-IsWindowsPlatform) {
+    $psArgs += @('-ExecutionPolicy', 'Bypass')
+  }
+  $psArgs += @('-File', $Path)
+  $psArgs += $Arguments
+  & $PowerShellHost @psArgs
 }
 
 function Invoke-Check {
@@ -67,25 +101,25 @@ Invoke-Check "git diff whitespace" {
 }
 
 Invoke-Check "skill and skillset validation" {
-  powershell.exe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $RepoRoot 'scripts/validate-skills.ps1') -RepoRoot $RepoRoot
+  Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/validate-skills.ps1') @('-RepoRoot', $RepoRoot)
 }
 
 Invoke-Check "skillset install dry runs" {
-  $dryRunHome = Join-Path $env:TEMP 'agentskills-release-check-codex-home'
+  $dryRunHome = Join-Path ([System.IO.Path]::GetTempPath()) 'agentskills-release-check-codex-home'
   $skillsets = Get-ChildItem -Path (Join-Path $RepoRoot 'skillsets') -Filter '*.yaml' -File | Sort-Object Name
   foreach ($skillset in $skillsets) {
     $name = [System.IO.Path]::GetFileNameWithoutExtension($skillset.Name)
     Write-Host "Dry run: $name"
-    powershell.exe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $RepoRoot 'scripts/install-skillset.ps1') $name -RepoRoot $RepoRoot -CodexHome $dryRunHome -DryRun | Out-Null
+    Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/install-skillset.ps1') @($name, '-RepoRoot', $RepoRoot, '-CodexHome', $dryRunHome, '-DryRun') | Out-Null
   }
 }
 
 Invoke-Check "fresh Codex home install smoke" {
-  powershell.exe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $RepoRoot 'scripts/test-fresh-codex-home.ps1') -RepoRoot $RepoRoot
+  Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/test-fresh-codex-home.ps1') @('-RepoRoot', $RepoRoot)
 }
 
 Invoke-Check "skillset listing" {
-  powershell.exe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $RepoRoot 'scripts/list-skillsets.ps1') -RepoRoot $RepoRoot -Markdown
+  Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/list-skillsets.ps1') @('-RepoRoot', $RepoRoot, '-Markdown')
 }
 
 Invoke-Check "secret scan" {

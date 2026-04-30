@@ -6,6 +6,9 @@ tag and publish.
 For final maintainer handoff before tagging, see
 [v0.2 release handoff](v0.2-release-handoff.md).
 
+For the path from prerelease to normal release, see
+[stable release plan](stable-release-plan.md).
+
 ## Release Shape
 
 Recommended release type: prerelease
@@ -58,6 +61,14 @@ should be described as proven workflows.
 - Source-grounded data/finance packets.
 - Leadership-review packets for executive bundles.
 - macOS and Linux release-check runs before cross-platform claims.
+
+## Stable Release Path
+
+A future normal release does not need every alpha bundle to be proven, but it
+does need stable install, validation, and documentation paths. Use the stable
+release plan to decide whether the release itself is stable while keeping
+newly expanded role bundles labeled alpha until real-input evidence supports
+promotion.
 
 ## Go/No-Go
 

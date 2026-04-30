@@ -252,6 +252,8 @@ For v0.2 release-candidate scope and prerelease decision support, see
 [v0.2 release candidate checklist](docs/release-candidate-v0.2.md).
 For maintainer handoff before tagging, see the
 [v0.2 release handoff](docs/v0.2-release-handoff.md).
+For the path from prerelease to normal release, see the
+[stable release plan](docs/stable-release-plan.md).
 For release details, see
 [v0.2.0 release notes](docs/release-notes/v0.2.0.md).
 

@@ -13,6 +13,23 @@ if ([string]::IsNullOrWhiteSpace($RepoRoot)) {
   $RepoRoot = (Resolve-Path $RepoRoot).Path
 }
 
+function Find-PowerShellHost {
+  $pwsh = Get-Command pwsh -ErrorAction SilentlyContinue
+  if ($pwsh) { return $pwsh.Source }
+
+  $windowsPowerShell = Get-Command powershell.exe -ErrorAction SilentlyContinue
+  if ($windowsPowerShell) { return $windowsPowerShell.Source }
+
+  throw "PowerShell host not found. Install PowerShell 7 or Windows PowerShell."
+}
+
+function Test-IsWindowsPlatform {
+  return ($PSVersionTable.PSVersion.Major -lt 6) -or
+    [System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform(
+      [System.Runtime.InteropServices.OSPlatform]::Windows
+    )
+}
+
 function Read-ListValue {
   param(
     [string]$Path,
@@ -73,6 +90,22 @@ function Read-PresetServers {
 $tempBase = [System.IO.Path]::GetTempPath()
 $tempRoot = Join-Path $tempBase ('agentskills-fresh-home-' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $tempRoot | Out-Null
+$PowerShellHost = Find-PowerShellHost
+
+function Invoke-PowerShellFile {
+  param(
+    [string]$Path,
+    [string[]]$Arguments = @()
+  )
+
+  $psArgs = @('-NoProfile')
+  if (Test-IsWindowsPlatform) {
+    $psArgs += @('-ExecutionPolicy', 'Bypass')
+  }
+  $psArgs += @('-File', $Path)
+  $psArgs += $Arguments
+  & $PowerShellHost @psArgs
+}
 
 try {
   foreach ($skillset in $Skillsets) {
@@ -82,7 +115,7 @@ try {
     }
 
     $codexHome = Join-Path $tempRoot $skillset
-    powershell.exe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $RepoRoot 'scripts/install-skillset.ps1') $skillset -RepoRoot $RepoRoot -CodexHome $codexHome | Out-Null
+    Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/install-skillset.ps1') @($skillset, '-RepoRoot', $RepoRoot, '-CodexHome', $codexHome) | Out-Null
 
     $skills = Read-ListValue -Path $manifestPath -Key 'skills'
     foreach ($skill in $skills) {
@@ -132,9 +165,10 @@ finally {
   if ($KeepTemp) {
     Write-Host "Kept temp Codex home root: $tempRoot"
   } else {
-    $resolvedTempBase = (Resolve-Path $tempBase).Path.TrimEnd('\')
+    $resolvedTempBase = (Resolve-Path $tempBase).Path.TrimEnd('\', '/')
     $resolvedTempRoot = (Resolve-Path $tempRoot).Path
-    if (-not $resolvedTempRoot.StartsWith($resolvedTempBase, [System.StringComparison]::OrdinalIgnoreCase)) {
+    $comparison = if (Test-IsWindowsPlatform) { [System.StringComparison]::OrdinalIgnoreCase } else { [System.StringComparison]::Ordinal }
+    if (-not $resolvedTempRoot.StartsWith($resolvedTempBase, $comparison)) {
       throw "Refusing to remove temp root outside temp base: $resolvedTempRoot"
     }
     if ((Split-Path -Leaf $resolvedTempRoot) -notmatch '^agentskills-fresh-home-[a-f0-9]{32}$') {

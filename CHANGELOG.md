@@ -3,6 +3,15 @@
 This project follows semver-style release tags. Dates are added when a release
 is cut.
 
+## Unreleased
+
+- Added a stable release plan that separates distribution stability from alpha
+  bundle maturity.
+- Expanded GitHub Actions validation to run the release gate on Windows, macOS,
+  and Linux.
+- Made release-gate scripts use the available PowerShell host instead of
+  assuming Windows PowerShell.
+
 ## v0.2.0 - 2026-04-30
 
 - Expanded from 42 to 158 validated skill files.

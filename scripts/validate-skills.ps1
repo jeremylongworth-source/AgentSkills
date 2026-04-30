@@ -1,6 +1,6 @@
 param(
   [string]$RepoRoot = '',
-  [string]$Validator = "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py"
+  [string]$Validator = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -8,6 +8,11 @@ $ErrorActionPreference = 'Stop'
 if ([string]::IsNullOrWhiteSpace($RepoRoot)) {
   $scriptDir = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
   $RepoRoot = (Resolve-Path (Join-Path $scriptDir '..')).Path
+}
+
+if ([string]::IsNullOrWhiteSpace($Validator)) {
+  $homeDir = if ($env:USERPROFILE) { $env:USERPROFILE } else { $HOME }
+  $Validator = Join-Path $homeDir '.codex/skills/.system/skill-creator/scripts/quick_validate.py'
 }
 
 $skillsDir = Join-Path $RepoRoot 'skills'

@@ -115,6 +115,9 @@ def validate(repo_root: Path) -> list[str]:
         errors, repo_root, "docs/release-candidate-v0.2.md"
     )
     handoff_path = require_file(errors, repo_root, "docs/v0.2-release-handoff.md")
+    stable_release_path = require_file(
+        errors, repo_root, "docs/stable-release-plan.md"
+    )
     changelog_path = require_file(errors, repo_root, "CHANGELOG.md")
 
     count_docs = [
@@ -232,6 +235,33 @@ def validate(repo_root: Path) -> list[str]:
         handoff,
     )
 
+    stable_release = (
+        stable_release_path.read_text(encoding="utf-8")
+        if stable_release_path.exists()
+        else ""
+    )
+    require_text(
+        errors,
+        stable_release_path,
+        "docs/stable-release-plan.md",
+        "Release stability is separate from bundle maturity.",
+        stable_release,
+    )
+    require_text(
+        errors,
+        stable_release_path,
+        "docs/stable-release-plan.md",
+        "Windows, macOS, and Linux GitHub Actions release gates pass.",
+        stable_release,
+    )
+    require_text(
+        errors,
+        stable_release_path,
+        "docs/stable-release-plan.md",
+        "Release notes distinguish stable distribution from alpha workflow maturity.",
+        stable_release,
+    )
+
     evaluation_readme = require_file(errors, repo_root, "docs/evaluation/README.md")
     evaluation_links = markdown_links(evaluation_readme)
     packets_dir = repo_root / "docs" / "evaluation" / "packets"
@@ -253,7 +283,21 @@ def validate(repo_root: Path) -> list[str]:
         errors,
         workflow,
         ".github/workflows/validation.yml",
-        "scripts\\release-check.ps1",
+        "./scripts/release-check.ps1",
+        workflow_text,
+    )
+    require_text(
+        errors,
+        workflow,
+        ".github/workflows/validation.yml",
+        "ubuntu-latest",
+        workflow_text,
+    )
+    require_text(
+        errors,
+        workflow,
+        ".github/workflows/validation.yml",
+        "macos-latest",
         workflow_text,
     )
     require_text(
@@ -282,6 +326,7 @@ def validate(repo_root: Path) -> list[str]:
         repo_root / "docs" / "release-owner-checklist.md",
         repo_root / "docs" / "release-candidate-v0.2.md",
         repo_root / "docs" / "v0.2-release-handoff.md",
+        repo_root / "docs" / "stable-release-plan.md",
     ]
     for path in docs_to_check:
         if not path.exists():

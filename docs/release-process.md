@@ -18,10 +18,16 @@
 10. Confirm every skillset dry-run install passes in the release check.
 11. Confirm the fresh Codex home install smoke test passes in the release check.
 12. Confirm the README, release notes, and repository structure match the actual files.
-13. Tag the release with a semver tag such as `v0.1.0`.
-14. If an additional descriptive tag is useful, keep it pointing at the same commit.
-15. Publish the GitHub release from the intended primary tag.
-16. Confirm the GitHub release state matches the launch decision:
+13. For a normal release, confirm the stable release plan has passed:
+   - Windows, macOS, and Linux GitHub Actions release gates are green
+   - local release gate passes with `gh skill publish --dry-run`
+   - published-tag install smoke is planned after publish
+   - release notes distinguish stable distribution from alpha bundle maturity
+14. Tag the release with a semver tag such as `v0.1.0`.
+15. If an additional descriptive tag is useful, keep it pointing at the same commit.
+16. Publish the GitHub release from the intended primary tag.
+17. Confirm the GitHub release state matches the launch decision:
    - normal release for stable public releases
    - prerelease only when the release should be explicitly marked as early or unstable
-17. Verify the published tag, release page, and default branch all point at the intended commit.
+18. Verify the published tag, release page, and default branch all point at the intended commit.
+19. Run a published-tag install smoke test against at least one representative skill.

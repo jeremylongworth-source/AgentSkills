@@ -6,6 +6,8 @@ aid, not an automated release system.
 ## Prechecks
 
 - Confirm the release version and intended tag.
+- For a normal release, review `docs/stable-release-plan.md` and confirm
+  release stability is not being confused with alpha bundle promotion.
 - Review `docs/v0.2-release-handoff.md` for the latest local gate result,
   known evidence gaps, and final release-owner actions.
 - Review `docs/release-candidate-v0.2.md` for scope, alpha boundaries, and the
@@ -30,6 +32,8 @@ aid, not an automated release system.
 - Real-input packets are required before promoting high-risk bundles beyond
   alpha.
 - Cross-platform claims require macOS, Linux, and Windows runs.
+- Normal release status requires Windows, macOS, and Linux GitHub Actions
+  release gates unless an exception is recorded.
 - Fresh-home install claims require the fresh-home smoke test or an equivalent
   manual install record.
 

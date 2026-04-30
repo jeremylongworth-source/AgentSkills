@@ -10,8 +10,15 @@ permissions:
 
 jobs:
   release-check:
-    name: Release gate
-    runs-on: windows-latest
+    name: Release gate (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - windows-latest
+          - ubuntu-latest
+          - macos-latest
 
     steps:
       - name: Check out repository
@@ -25,4 +32,4 @@ jobs:
       - name: Run release gate
         shell: pwsh
         run: |
-          powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\release-check.ps1 -SkipPublishDryRun
+          ./scripts/release-check.ps1 -SkipPublishDryRun

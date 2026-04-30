@@ -1,6 +1,7 @@
 ---
 name: sales-pipeline-management
 description: Design, audit, and improve sales pipeline stages, qualification, CRM hygiene, forecasting, deal reviews, pipeline coverage, stage exit criteria, sales metrics, opportunity management, and revenue operating cadence. Use when Codex is asked about pipeline health, sales process, forecast accuracy, deal stages, CRM fields, sales dashboards, or funnel bottlenecks.
+license: MIT
 ---
 
 # Sales Pipeline Management

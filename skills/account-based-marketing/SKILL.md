@@ -1,6 +1,7 @@
 ---
 name: account-based-marketing
 description: Design, run, and audit account-based marketing for high-value B2B accounts. Use when Codex is asked about ABM strategy, target account selection, buying committees, account tiers, 1:1/1:few/1:many plays, sales-marketing alignment, personalization, account engagement, enterprise campaigns, expansion, or named-account pipeline.
+license: MIT
 ---
 
 # Account-Based Marketing

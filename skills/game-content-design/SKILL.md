@@ -1,6 +1,7 @@
 ---
 name: game-content-design
 description: Create, structure, balance, and review game content. Use when Codex is asked to design levels, missions, quests, encounters, enemies, items, rewards, progression, tutorials, puzzles, biomes, factions, economies, live-ops content, design docs, or playable content plans.
+license: MIT
 ---
 
 # Game Content Design

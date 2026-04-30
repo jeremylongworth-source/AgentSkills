@@ -1,6 +1,7 @@
 ---
 name: paid-media-growth
 description: Plan, launch, audit, and optimize paid acquisition campaigns across search, paid social, display, retargeting, Google Ads, LinkedIn Ads, Meta Ads, creative testing, budgets, bidding, audience strategy, landing pages, conversion tracking, and ROAS/CAC performance. Use when Codex is asked about paid media strategy or campaign optimization.
+license: MIT
 ---
 
 # Paid Media Growth

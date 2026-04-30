@@ -1,6 +1,7 @@
 ---
 name: game-music-soundtrack-design
 description: Compose, generate, direct, implement, and review game music and soundtracks. Use when Codex is asked about themes, motifs, adaptive music, interactive scores, soundtrack generation, stems, loops, transitions, vertical layering, horizontal resequencing, combat music, exploration music, boss themes, ambience beds, licensed music, music prompts, FMOD, Wwise, Unreal MetaSounds, or Unity music systems.
+license: MIT
 ---
 
 # Game Music Soundtrack Design

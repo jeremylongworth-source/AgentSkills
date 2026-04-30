@@ -1,6 +1,7 @@
 ---
 name: growth-strategy-orchestration
 description: Coordinate sales and marketing strategy across positioning, ICP, funnel, pipeline, channels, lifecycle, analytics, experiments, and revenue operations. Use when Codex is asked to create a GTM plan, growth strategy, launch plan, revenue plan, marketing/sales operating system, funnel audit, or cross-functional sales-and-marketing program.
+license: MIT
 ---
 
 # Growth Strategy Orchestration

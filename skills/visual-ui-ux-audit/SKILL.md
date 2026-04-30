@@ -1,6 +1,7 @@
 ---
 name: visual-ui-ux-audit
 description: Audit web and app interfaces using visual evidence. Use when Codex is asked to critique UI/UX, polish a design, inspect a localhost app, compare screenshots, find visual hierarchy/layout/typography/color/spacing/state/responsiveness/accessibility issues, or provide annotated design feedback grounded in browser screenshots.
+license: MIT
 ---
 
 # Visual UI UX Audit

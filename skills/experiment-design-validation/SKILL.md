@@ -1,6 +1,7 @@
 ---
 name: experiment-design-validation
 description: Design, evaluate, and document experiments, A/B tests, product tests, growth tests, validation tests, hypotheses, primary metrics, guardrails, sample considerations, decision rules, and learning plans. Use when Codex is asked to test an idea, validate a change, run an experiment, compare variants, or create an experimentation plan.
+license: MIT
 ---
 
 # Experiment Design Validation

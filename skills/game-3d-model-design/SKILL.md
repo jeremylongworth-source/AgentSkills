@@ -1,6 +1,7 @@
 ---
 name: game-3d-model-design
 description: Design, build, repair, and review 3D models for games. Use when Codex is asked about mesh construction, topology, retopology, UV unwrapping, normals, bevels, baking, hard-surface modeling, organic modeling, sculpt-to-low-poly workflows, deformation, rig-readiness, or model cleanup.
+license: MIT
 ---
 
 # Game 3D Model Design

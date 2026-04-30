@@ -1,6 +1,7 @@
 ---
 name: game-ui-design
 description: Design, implement, and review game user interfaces. Use when Codex is asked to create or improve HUDs, menus, overlays, inventory screens, ability bars, dialogue UI, controller navigation, accessibility, onboarding, game settings, UI motion, visual hierarchy, or game-specific frontend flows.
+license: MIT
 ---
 
 # Game UI Design

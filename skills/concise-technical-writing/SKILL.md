@@ -1,6 +1,7 @@
 ---
 name: concise-technical-writing
 description: Write, edit, and tighten clear concise technical communication. Use when Codex is asked for commit messages, PR descriptions, changelogs, README sections, design notes, implementation summaries, status updates, release notes, bug reports, comments, or to make text shorter, clearer, less verbose, less AI-sounding, or more direct.
+license: MIT
 ---
 
 # Concise Technical Writing

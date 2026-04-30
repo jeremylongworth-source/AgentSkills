@@ -1,6 +1,7 @@
 ---
 name: skill-evaluation-iteration
 description: Evaluate, forward-test, and improve Codex skills. Use when Codex is asked to test a skill, compare performance with and without a skill, improve a skillset, make skills stronger, validate skill usefulness, create acceptance tests for skills, or iterate skill instructions based on realistic scenarios.
+license: MIT
 ---
 
 # Skill Evaluation Iteration

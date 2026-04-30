@@ -1,6 +1,7 @@
 ---
 name: content-seo-strategy
 description: Plan, create, audit, and improve SEO and content marketing. Use when Codex is asked about helpful content, Google Search, E-E-A-T, topic clusters, editorial calendars, landing pages, keyword intent, on-page SEO, technical SEO basics, content briefs, organic acquisition, or content performance.
+license: MIT
 ---
 
 # Content SEO Strategy

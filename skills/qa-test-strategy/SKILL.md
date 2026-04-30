@@ -1,6 +1,7 @@
 ---
 name: qa-test-strategy
 description: Design, audit, and improve QA and test strategy for software, games, websites, products, and launches. Use when Codex is asked about test plans, acceptance tests, regression, smoke testing, exploratory testing, automation scope, risk-based coverage, test data, release gates, defect triage, QA checklists, or verification strategy.
+license: MIT
 ---
 
 # QA Test Strategy

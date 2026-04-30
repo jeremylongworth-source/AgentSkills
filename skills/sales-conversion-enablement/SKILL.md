@@ -1,6 +1,7 @@
 ---
 name: sales-conversion-enablement
 description: Improve sales discovery, demos, proposals, business cases, objection handling, negotiation, mutual action plans, procurement, handoffs, and sales enablement assets. Use when Codex is asked to help convert opportunities, write sales collateral, create demo flows, prepare call plans, handle objections, or improve close rates.
+license: MIT
 ---
 
 # Sales Conversion Enablement

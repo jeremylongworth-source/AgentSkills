@@ -1,6 +1,7 @@
 ---
 name: game-3d-asset-design
 description: Plan, create, optimize, import, export, and review game-ready 3D assets. Use when Codex is asked to work on props, environment pieces, modular kits, materials, textures, LODs, collision, pivots, scale, naming, asset budgets, Unity/Unreal/Godot imports, or production handoff for 3D game assets.
+license: MIT
 ---
 
 # Game 3D Asset Design

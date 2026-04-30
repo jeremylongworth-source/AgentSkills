@@ -1,6 +1,7 @@
 ---
 name: competitive-market-research
 description: Research, compare, and synthesize markets, categories, competitors, alternatives, pricing, feature sets, audience segments, positioning, review themes, and strategic opportunities. Use when Codex is asked for competitive analysis, market maps, category research, competitor messaging, pricing comparison, SWOT, positioning gaps, or market-entry research.
+license: MIT
 ---
 
 # Competitive Market Research

@@ -1,6 +1,7 @@
 ---
 name: game-playtesting-usability
 description: Plan, run, analyze, and review game playtests, usability sessions, player feedback, telemetry, onboarding tests, difficulty tests, controls tests, fun/enjoyability research, prototype validation, and playtest reports. Use when Codex is asked to test whether a game is understandable, fun, balanced, usable, accessible, or ready for release.
+license: MIT
 ---
 
 # Game Playtesting Usability

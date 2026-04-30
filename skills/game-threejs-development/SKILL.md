@@ -1,6 +1,7 @@
 ---
 name: game-threejs-development
 description: Build, debug, optimize, and review 3D browser games with Three.js. Use when Codex is asked about Three.js scenes, cameras, render loops, WebGLRenderer, asset loading, GLTF/GLB, AnimationMixer, controls, raycasting, shaders, postprocessing, physics integrations, responsive canvas sizing, WebGL performance, mobile browser support, or publishing Three.js games as HTML5 builds.
+license: MIT
 ---
 
 # Three.js Game Development

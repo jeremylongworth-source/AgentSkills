@@ -1,6 +1,7 @@
 ---
 name: product-analytics-instrumentation
 description: Design, audit, and improve product analytics instrumentation, event taxonomy, telemetry schemas, funnels, activation metrics, retention metrics, tracking plans, observability events, QA, and data quality. Use when Codex is asked about product analytics events, app/game telemetry, funnel instrumentation, analytics implementation, event naming, properties, user identity, or measurement-ready product design.
+license: MIT
 ---
 
 # Product Analytics Instrumentation

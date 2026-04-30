@@ -1,6 +1,7 @@
 ---
 name: itch-html5-game-publishing
 description: Package, test, publish, price, and update browser-playable HTML5 games on itch.io. Use when Codex is asked about itch.io HTML5 uploads, ZIP requirements, index.html, iframe embeds, fullscreen mode, mobile-friendly settings, case-sensitive paths, HTTPS assets, compression, game page setup, donations, pay-what-you-want pricing, creator payments, bonus files, or itch.io launch readiness.
+license: MIT
 ---
 
 # itch.io HTML5 Game Publishing

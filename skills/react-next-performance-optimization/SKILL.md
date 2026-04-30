@@ -1,6 +1,7 @@
 ---
 name: react-next-performance-optimization
 description: Audit, diagnose, and optimize React and Next.js application performance. Use when Codex is asked about Core Web Vitals, slow interactions, bundle size, caching, Server Components, Client Component boundaries, re-renders, memoization, image/font/script optimization, lazy loading, route performance, production readiness, or React/Next.js performance regressions.
+license: MIT
 ---
 
 # React Next Performance Optimization

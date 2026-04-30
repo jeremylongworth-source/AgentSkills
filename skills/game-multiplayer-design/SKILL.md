@@ -1,6 +1,7 @@
 ---
 name: game-multiplayer-design
 description: Design, implement, debug, and review multiplayer game systems. Use when Codex is asked about client/server architecture, authoritative servers, listen servers, dedicated servers, peer-to-peer, replication, prediction, interpolation, rollback, lag compensation, matchmaking, lobbies, sessions, state synchronization, netcode, anti-cheat risk, network testing, Unity Netcode, Unreal networking, Godot multiplayer, or custom multiplayer backends.
+license: MIT
 ---
 
 # Game Multiplayer Design

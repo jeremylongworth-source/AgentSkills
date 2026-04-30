@@ -1,6 +1,7 @@
 ---
 name: game-sound-design
 description: Design, generate, implement, debug, and review game sound effects and interactive audio. Use when Codex is asked about SFX, Foley, ambience, UI sounds, combat sounds, creature sounds, weapon audio, footsteps, spatial audio, procedural audio, audio events, middleware integration, mix behavior, sound libraries, generated sound assets, Unity audio, Unreal MetaSounds, FMOD, Wwise, or game audio implementation.
+license: MIT
 ---
 
 # Game Sound Design

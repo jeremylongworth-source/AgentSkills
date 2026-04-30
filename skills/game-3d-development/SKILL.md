@@ -1,6 +1,7 @@
 ---
 name: game-3d-development
 description: Plan, implement, debug, and review real-time 3D game development work. Use when Codex is asked to build or improve 3D gameplay, cameras, controllers, physics interactions, animation integration, spatial UI, scene architecture, composition/component architecture, performance, rendering, Three.js, Unity, Unreal, Godot, or custom-engine 3D systems.
+license: MIT
 ---
 
 # Game 3D Development

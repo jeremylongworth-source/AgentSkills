@@ -1,6 +1,7 @@
 ---
 name: sales-prospecting-outreach
 description: Plan, write, and review ethical B2B/B2C prospecting and outbound outreach. Use when Codex is asked about prospect lists, ICP targeting, cold email, cold calls, LinkedIn/social selling, outreach sequences, personalization, lead qualification, reply handling, objection replies, deliverability, consent, or compliant outbound workflows.
+license: MIT
 ---
 
 # Sales Prospecting Outreach

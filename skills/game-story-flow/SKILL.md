@@ -1,6 +1,7 @@
 ---
 name: game-story-flow
 description: Design, structure, and review interactive game narrative. Use when Codex is asked to create or improve story flow, plot beats, branching narrative, quests with story consequences, character arcs, dialogue structure, lore delivery, cutscene pacing, scene outlines, player choice, or narrative design docs.
+license: MIT
 ---
 
 # Game Story Flow

@@ -1,6 +1,7 @@
 ---
 name: game-sprite-design
 description: Design, generate, animate, export, and review game-ready 2D sprites and sprite pipelines. Use when Codex is asked about pixel art, 2D character sprites, enemy sprites, sprite sheets, animation frames, texture atlases, tile sets, autotiles, UI icons, item icons, VFX sprites, transparent backgrounds, frame grids, pivots/origins, hitboxes, Phaser sprites, Aseprite exports, Tiled tilesets, or HTML5 game-ready 2D assets.
+license: MIT
 ---
 
 # Game Sprite Design

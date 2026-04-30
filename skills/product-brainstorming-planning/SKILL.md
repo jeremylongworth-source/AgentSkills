@@ -1,6 +1,7 @@
 ---
 name: product-brainstorming-planning
 description: Explore intent and shape ideas before implementation planning. Use when Codex is asked to brainstorm, ideate, plan a feature/product/workflow, clarify a vague idea, compare approaches, discover requirements, create a PRD, define MVP scope, or turn rough goals into an implementation-ready brief.
+license: MIT
 ---
 
 # Product Brainstorming Planning

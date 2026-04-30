@@ -1,6 +1,7 @@
 ---
 name: marketing-analytics-attribution
 description: Define, audit, and improve marketing analytics, GA4 events, conversion goals, attribution, dashboards, funnel metrics, CAC, LTV, campaign measurement, experiment design, UTM governance, CRM-source reporting, and data quality checks. Use when Codex is asked to measure sales/marketing performance or diagnose reporting.
+license: MIT
 ---
 
 # Marketing Analytics Attribution

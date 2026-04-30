@@ -1,6 +1,7 @@
 ---
 name: accessibility-inclusive-design
 description: Design, audit, and improve accessibility and inclusive user experiences. Use when Codex is asked about WCAG, keyboard navigation, focus states, screen readers, ARIA, contrast, captions, reduced motion, forms, semantic HTML, accessible UI, game accessibility, inclusive design, accessibility QA, or compliance-sensitive accessibility work.
+license: MIT
 ---
 
 # Accessibility Inclusive Design

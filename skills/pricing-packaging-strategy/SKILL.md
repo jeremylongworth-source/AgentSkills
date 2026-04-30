@@ -1,6 +1,7 @@
 ---
 name: pricing-packaging-strategy
 description: Design, audit, and test pricing and packaging strategy. Use when Codex is asked about SaaS pricing, product tiers, packaging, value metrics, subscriptions, usage-based billing, freemium, trials, discounts, pay-what-you-want, donations, monetization, willingness to pay, pricing pages, billing implications, or pricing experiments.
+license: MIT
 ---
 
 # Pricing Packaging Strategy

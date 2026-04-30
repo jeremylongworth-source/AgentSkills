@@ -1,6 +1,7 @@
 ---
 name: customer-research-validation
 description: Plan, conduct, synthesize, and review customer research and demand validation. Use when Codex is asked about customer interviews, surveys, usability studies, JTBD, buyer discovery, problem validation, demand validation, research scripts, research synthesis, voice-of-customer analysis, customer evidence, or research-backed product/marketing decisions.
+license: MIT
 ---
 
 # Customer Research Validation

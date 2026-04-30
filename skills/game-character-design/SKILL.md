@@ -1,6 +1,7 @@
 ---
 name: game-character-design
 description: Create, critique, and refine game characters for visual clarity, gameplay readability, story role, and production readiness. Use when Codex is asked to design playable characters, NPCs, enemies, creatures, costumes, silhouettes, shape language, factions, abilities, personality, character sheets, or 3D character production notes.
+license: MIT
 ---
 
 # Game Character Design

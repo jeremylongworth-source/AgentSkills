@@ -1,6 +1,7 @@
 ---
 name: game-phaser-development
 description: Build, debug, optimize, and review 2D HTML5 games with Phaser. Use when Codex is asked about Phaser scenes, game config, preload/create/update, sprites, animations, tilemaps, cameras, Arcade Physics, Matter Physics, input, particles, UI overlays, asset loading, scaling, mobile browser support, or publishing Phaser games as HTML5 builds.
+license: MIT
 ---
 
 # Phaser Game Development

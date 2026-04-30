@@ -1,6 +1,7 @@
 ---
 name: tailwind-design-system
 description: Build, audit, and refactor Tailwind CSS interfaces and design systems. Use when Codex is asked about Tailwind classes, component variants, utility consistency, tokens, theme variables, responsive patterns, class detection, dynamic class issues, production CSS size, design-system enforcement, or Tailwind UI polish.
+license: MIT
 ---
 
 # Tailwind Design System

@@ -1,6 +1,7 @@
 ---
 name: release-launch-readiness
 description: Plan, audit, and execute release and launch readiness for software, games, websites, products, campaigns, and public launches. Use when Codex is asked about release checklists, launch plans, deployment risk, feature flags, rollout plans, rollback plans, monitoring, support readiness, communications, incident response, post-launch review, or go-live readiness.
+license: MIT
 ---
 
 # Release Launch Readiness

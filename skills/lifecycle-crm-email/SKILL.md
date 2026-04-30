@@ -1,6 +1,7 @@
 ---
 name: lifecycle-crm-email
 description: Design, audit, and improve lifecycle marketing, CRM segmentation, email campaigns, nurture flows, onboarding, retention, winback, lead scoring, consent, deliverability, CAN-SPAM-aware workflows, and customer communications. Use when Codex is asked about email marketing, lifecycle stages, CRM journeys, automation, or subscriber health.
+license: MIT
 ---
 
 # Lifecycle CRM Email

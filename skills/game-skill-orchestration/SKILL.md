@@ -1,6 +1,7 @@
 ---
 name: game-skill-orchestration
 description: Coordinate multiple game-development skills and produce outcome-first briefs, plans, reviews, and validation flows. Use when Codex is asked to explore the game skillset, route a broad game project across disciplines, improve skill quality, plan a full game feature, combine design/code/art/audio/story/UI/multiplayer/social/cinematic work, or align workflows with latest LLM model guidance such as GPT-5.5.
+license: MIT
 ---
 
 # Game Skill Orchestration

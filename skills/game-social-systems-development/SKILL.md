@@ -1,6 +1,7 @@
 ---
 name: game-social-systems-development
 description: Design, implement, debug, and review player social interaction systems for games. Use when Codex is asked about chat, voice, friends, parties, lobbies, guilds, clans, presence, invites, matchmaking social flow, emotes, pings, reputation, blocking, muting, reporting, moderation, privacy, parental controls, user-generated content, community safety, trust and safety, or social UX.
+license: MIT
 ---
 
 # Game Social Systems Development

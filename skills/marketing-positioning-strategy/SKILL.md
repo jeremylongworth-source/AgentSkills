@@ -1,6 +1,7 @@
 ---
 name: marketing-positioning-strategy
 description: Define ICP, buyer personas, positioning, category strategy, messaging, value propositions, offers, campaign strategy, brand narrative, launch strategy, and go-to-market messaging. Use when Codex is asked to clarify who to sell to, why they buy, how to differentiate, or how to package a campaign or offer.
+license: MIT
 ---
 
 # Marketing Positioning Strategy

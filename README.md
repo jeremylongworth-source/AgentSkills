@@ -255,7 +255,7 @@ For maintainer handoff before tagging, see the
 For the path from prerelease to normal release, see the
 [stable release plan](docs/stable-release-plan.md).
 For release details, see
-[v0.2.0 release notes](docs/release-notes/v0.2.0.md).
+[v0.2.1 release notes](docs/release-notes/v0.2.1.md).
 
 ## Suggested first skillset
 

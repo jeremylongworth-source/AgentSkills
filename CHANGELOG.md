@@ -5,6 +5,8 @@ is cut.
 
 ## Unreleased
 
+## v0.2.1 - 2026-04-30
+
 - Added a stable release plan that separates distribution stability from alpha
   bundle maturity.
 - Expanded GitHub Actions validation to run the release gate on Windows, macOS,

@@ -1,0 +1,29 @@
+.DS_Store
+Thumbs.db
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs, caches, and temporary files
+*.log
+*.tmp
+*.bak
+.codex-test*/
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Local build and dependency output
+node_modules/
+dist/
+build/
+coverage/
+
+# Local databases and tool state
+*.sqlite
+*.sqlite-*
+*.db

@@ -1,0 +1,51 @@
+name: all
+description: Install every skill and all MCP presets.
+skills:
+  - accessibility-inclusive-design
+  - account-based-marketing
+  - competitive-market-research
+  - concise-technical-writing
+  - content-seo-strategy
+  - customer-research-validation
+  - experiment-design-validation
+  - game-3d-asset-design
+  - game-3d-development
+  - game-3d-model-design
+  - game-character-design
+  - game-cinematic-cutscene-design
+  - game-content-design
+  - game-multiplayer-design
+  - game-music-soundtrack-design
+  - game-phaser-development
+  - game-playtesting-usability
+  - game-skill-orchestration
+  - game-social-systems-development
+  - game-sound-design
+  - game-sprite-design
+  - game-story-flow
+  - game-threejs-development
+  - game-ui-design
+  - growth-strategy-orchestration
+  - itch-html5-game-publishing
+  - lifecycle-crm-email
+  - marketing-analytics-attribution
+  - marketing-positioning-strategy
+  - paid-media-growth
+  - pricing-packaging-strategy
+  - product-analytics-instrumentation
+  - product-brainstorming-planning
+  - qa-test-strategy
+  - react-next-performance-optimization
+  - release-launch-readiness
+  - sales-conversion-enablement
+  - sales-pipeline-management
+  - sales-prospecting-outreach
+  - skill-evaluation-iteration
+  - tailwind-design-system
+  - visual-ui-ux-audit
+mcp_presets:
+  - docs-research
+  - browser-qa
+  - full
+agents_file: agents/AGENTS.full.md
+

@@ -1,0 +1,15 @@
+name: research-validation
+description: Customer research, competitive research, experimentation, analytics, playtesting, and validation.
+skills:
+  - product-brainstorming-planning
+  - customer-research-validation
+  - competitive-market-research
+  - experiment-design-validation
+  - product-analytics-instrumentation
+  - game-playtesting-usability
+  - marketing-analytics-attribution
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.full.md
+

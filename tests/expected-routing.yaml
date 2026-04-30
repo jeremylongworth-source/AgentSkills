@@ -1,0 +1,31 @@
+browser-game-build:
+  - product-brainstorming-planning
+  - game-skill-orchestration
+  - game-phaser-development
+  - game-sprite-design
+  - game-content-design
+  - game-ui-design
+  - game-sound-design
+  - itch-html5-game-publishing
+  - pricing-packaging-strategy
+  - qa-test-strategy
+  - release-launch-readiness
+gtm-plan:
+  - growth-strategy-orchestration
+  - marketing-positioning-strategy
+  - customer-research-validation
+  - competitive-market-research
+  - content-seo-strategy
+  - sales-prospecting-outreach
+  - marketing-analytics-attribution
+  - experiment-design-validation
+react-performance-audit:
+  - react-next-performance-optimization
+  - visual-ui-ux-audit
+  - tailwind-design-system
+  - qa-test-strategy
+skill-improvement:
+  - skill-evaluation-iteration
+  - sales-conversion-enablement
+  - concise-technical-writing
+

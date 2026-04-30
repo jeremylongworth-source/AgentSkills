@@ -1,0 +1,20 @@
+name: html5-game-publishing
+description: Browser game development and itch.io publishing.
+skills:
+  - game-skill-orchestration
+  - game-threejs-development
+  - game-phaser-development
+  - game-sprite-design
+  - game-ui-design
+  - game-sound-design
+  - itch-html5-game-publishing
+  - visual-ui-ux-audit
+  - accessibility-inclusive-design
+  - product-analytics-instrumentation
+  - qa-test-strategy
+  - release-launch-readiness
+mcp_presets:
+  - docs-research
+  - browser-qa
+agents_file: agents/AGENTS.game-dev.md
+

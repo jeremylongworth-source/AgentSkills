@@ -1,0 +1,25 @@
+name: sales-marketing
+description: Sales, marketing, research, growth, lifecycle, analytics, pricing, and launch skills.
+skills:
+  - growth-strategy-orchestration
+  - marketing-positioning-strategy
+  - sales-pipeline-management
+  - sales-prospecting-outreach
+  - sales-conversion-enablement
+  - content-seo-strategy
+  - paid-media-growth
+  - lifecycle-crm-email
+  - marketing-analytics-attribution
+  - account-based-marketing
+  - customer-research-validation
+  - competitive-market-research
+  - experiment-design-validation
+  - pricing-packaging-strategy
+  - product-analytics-instrumentation
+  - accessibility-inclusive-design
+  - qa-test-strategy
+  - release-launch-readiness
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.sales-marketing.md
+

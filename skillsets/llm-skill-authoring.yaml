@@ -1,0 +1,10 @@
+name: llm-skill-authoring
+description: Skill creation, skill evaluation, concise writing, and model documentation workflows.
+skills:
+  - skill-evaluation-iteration
+  - concise-technical-writing
+  - product-brainstorming-planning
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.full.md
+

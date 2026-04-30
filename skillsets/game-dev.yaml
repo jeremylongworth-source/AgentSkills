@@ -1,0 +1,31 @@
+name: game-dev
+description: Game development, design, assets, audio, publishing, validation, QA, and launch skills.
+skills:
+  - game-skill-orchestration
+  - game-3d-development
+  - game-threejs-development
+  - game-phaser-development
+  - game-content-design
+  - game-story-flow
+  - game-ui-design
+  - game-sprite-design
+  - game-3d-asset-design
+  - game-3d-model-design
+  - game-character-design
+  - game-multiplayer-design
+  - game-social-systems-development
+  - game-sound-design
+  - game-music-soundtrack-design
+  - game-cinematic-cutscene-design
+  - game-playtesting-usability
+  - itch-html5-game-publishing
+  - accessibility-inclusive-design
+  - pricing-packaging-strategy
+  - product-analytics-instrumentation
+  - qa-test-strategy
+  - release-launch-readiness
+mcp_presets:
+  - docs-research
+  - browser-qa
+agents_file: agents/AGENTS.game-dev.md
+

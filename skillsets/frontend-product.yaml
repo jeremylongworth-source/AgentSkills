@@ -1,0 +1,19 @@
+name: frontend-product
+description: Product shaping, frontend performance, UI quality, accessibility, analytics, QA, and release readiness.
+skills:
+  - product-brainstorming-planning
+  - react-next-performance-optimization
+  - visual-ui-ux-audit
+  - tailwind-design-system
+  - concise-technical-writing
+  - accessibility-inclusive-design
+  - customer-research-validation
+  - experiment-design-validation
+  - product-analytics-instrumentation
+  - qa-test-strategy
+  - release-launch-readiness
+mcp_presets:
+  - docs-research
+  - browser-qa
+agents_file: agents/AGENTS.full.md
+

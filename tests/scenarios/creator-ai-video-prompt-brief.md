@@ -8,6 +8,7 @@ Prompt:
 
 Expected routing:
 
+- ai-video-prompt-pack
 - video-script
 - ai-media-prompt-brief
 - publishing-checklist

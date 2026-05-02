@@ -20,7 +20,11 @@ creator assistants, and small creator teams.
 - `short-form-hooks`: write truthful hooks and first beats for short-form
   content.
 - `video-script`: draft video scripts, visual notes, CTAs, and cutdown ideas.
+- `ai-video-prompt-pack`: create AI video prompt packs with timing, variants,
+  negative prompts, safe areas, and platform/model constraints.
 - `thumbnail-title-brief`: create title packs and thumbnail creative briefs.
+- `social-asset-production`: create profile images, banners, post images,
+  article covers, thumbnails, and crop-safe export checks.
 - `caption-writer`: write social captions, CTAs, community prompts, and
   disclosure notes.
 - `content-calendar`: build 7-day, 30-day, weekly, and campaign calendars.
@@ -28,6 +32,10 @@ creator assistants, and small creator teams.
 - `newsletter-repurpose`: adapt creator content into newsletters or social
   cutdowns.
 - `podcast-outline`: create episode outlines, questions, and clip moments.
+- `owned-social-profile-audit`: audit bios, profile assets, links, pinned or
+  featured posts, visibility risks, and conversion paths.
+- `brand-social-launch-pack`: coordinate profile updates, launch posts, pinned
+  content, social assets, replies, and publishing checks.
 - `publishing-checklist`: create pre-publish QA and post-publish monitoring
   checklists.
 - `content-seo-strategy`: support search-oriented content planning.
@@ -75,8 +83,9 @@ explicitly approves an action.
 ## Acceptance Criteria
 
 - The bundle installs with a dry run.
-- Content pillar, short-form script, calendar, repurposing, and publishing
-  checklist scenarios route to the intended skills.
+- Content pillar, short-form script, AI video prompt, social asset, profile
+  audit, launch pack, calendar, repurposing, and publishing checklist scenarios
+  route to the intended skills.
 - Outputs include concrete artifacts: pillar map, hook pack, video script,
   title/thumbnail brief, caption bank, content calendar, repurposing plan,
   newsletter draft, podcast outline, or publishing checklist.

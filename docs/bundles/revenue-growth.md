@@ -17,12 +17,16 @@ teams working on pipeline and conversion.
   work.
 - `marketing-positioning-strategy`: define ICP, category, value props, and
   messaging.
+- `owned-social-profile-audit` and `brand-social-launch-pack`: improve social
+  profile conversion paths and coordinate owned-channel launch packages.
 - `account-based-marketing`: plan named-account and buying-committee plays.
 - `competitive-market-research`: validate category, competitor, and market
   evidence.
 - `sales-prospecting-outreach`: draft compliant outreach and reply handling.
 - `sales-conversion-enablement`: prepare discovery, demos, proposals, and close
   plans.
+- `social-asset-production` and `ai-video-prompt-pack`: support social launch
+  creative, profile assets, post visuals, and AI video prompt packs.
 - `content-seo-strategy`, `paid-media-growth`, and `lifecycle-crm-email`:
   support channel execution.
 - `pricing-packaging-strategy`, `marketing-analytics-attribution`, and
@@ -65,6 +69,8 @@ read-only unless a reviewer approves a write action.
 - The bundle installs with a dry run.
 - Account research and outreach scenarios route to ABM, research, prospecting,
   sales enablement, and writing skills.
+- Social profile audit, launch pack, social asset, and AI video prompt
+  scenarios route to the intended growth and creative skills.
 - Outputs distinguish internal notes from customer-facing copy.
 - Outbound, CRM, pricing, compliance, and campaign-launch actions require human
   approval.

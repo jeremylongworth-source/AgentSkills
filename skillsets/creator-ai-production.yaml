@@ -2,6 +2,7 @@ name: creator-ai-production
 description: Creator AI production workflows for provider-neutral AI content briefs, image/video/audio prompt packs, synthetic character bibles, voiceover planning, provenance, disclosure, rights, and human-review gates.
 skills:
   - ai-media-prompt-brief
+  - ai-video-prompt-pack
   - synthetic-character-bible
   - creator-reputation-risk-review
   - publishing-checklist
@@ -11,6 +12,7 @@ skills:
   - video-script
   - short-form-hooks
   - thumbnail-title-brief
+  - social-asset-production
   - caption-writer
   - podcast-outline
   - content-calendar

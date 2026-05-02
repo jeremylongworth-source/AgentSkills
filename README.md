@@ -99,9 +99,9 @@ Install a local Codex skillset from a cloned repo:
 
 Current v0.2 development gate:
 
-- 158 validated skill files
+- 162 validated skill files
 - 32 validated skillsets
-- 113 routing scenarios
+- 117 routing scenarios
 - all skillset install dry-runs pass
 - fresh Codex home install smoke passes for `game-dev` and `all`
 - `gh skill publish --dry-run` returns `ok`

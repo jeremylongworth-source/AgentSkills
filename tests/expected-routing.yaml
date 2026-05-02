@@ -568,6 +568,13 @@ creator-ai-image-prompt-pack:
   - creator-reputation-risk-review
   - concise-technical-writing
 creator-ai-video-prompt-brief:
+  - ai-video-prompt-pack
+  - video-script
+  - ai-media-prompt-brief
+  - publishing-checklist
+  - creator-reputation-risk-review
+creator-ai-video-prompt-pack:
+  - ai-video-prompt-pack
   - video-script
   - ai-media-prompt-brief
   - publishing-checklist
@@ -586,4 +593,23 @@ creator-ai-batch-production-plan:
   - creator-production-ops-brief
   - content-calendar
   - ai-media-prompt-brief
+  - publishing-checklist
+owned-social-profile-audit:
+  - owned-social-profile-audit
+  - marketing-positioning-strategy
+  - visual-ui-ux-audit
+  - publishing-checklist
+social-asset-production:
+  - social-asset-production
+  - ai-media-prompt-brief
+  - visual-ui-ux-audit
+  - accessibility-inclusive-design
+  - publishing-checklist
+brand-social-launch-pack:
+  - brand-social-launch-pack
+  - marketing-positioning-strategy
+  - caption-writer
+  - owned-social-profile-audit
+  - social-asset-production
+  - ai-video-prompt-pack
   - publishing-checklist

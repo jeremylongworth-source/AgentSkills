@@ -3,9 +3,13 @@ description: Sales, marketing, research, growth, lifecycle, analytics, pricing, 
 skills:
   - growth-strategy-orchestration
   - marketing-positioning-strategy
+  - owned-social-profile-audit
+  - brand-social-launch-pack
   - sales-pipeline-management
   - sales-prospecting-outreach
   - sales-conversion-enablement
+  - social-asset-production
+  - ai-video-prompt-pack
   - content-seo-strategy
   - paid-media-growth
   - lifecycle-crm-email
@@ -22,4 +26,3 @@ skills:
 mcp_presets:
   - docs-research
 agents_file: agents/AGENTS.sales-marketing.md
-

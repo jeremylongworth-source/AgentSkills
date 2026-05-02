@@ -19,6 +19,9 @@ creator managers, agencies, and creator teams using AI-assisted production.
   voiceover, thumbnail, b-roll, and batch media prompt briefs with creative
   intent, source references, constraints, exclusions, rights/provenance notes,
   acceptance criteria, and review gates.
+- `ai-video-prompt-pack`: turn video concepts into model-aware prompt packs
+  with scene timing, safe areas, variants, negative prompts, and regeneration
+  notes for tools such as Gemini/Veo, Sora, Runway, Pika, or Luma.
 - `synthetic-character-bible`: define synthetic personas, virtual influencers,
   recurring fictional hosts, mascots, disclosure rules, identity boundaries,
   voice/visual continuity, and prohibited claims.
@@ -29,9 +32,9 @@ creator managers, agencies, and creator teams using AI-assisted production.
 - `ai-risk-register` and `ai-governance-checklist`: track AI risk, human review,
   privacy, consent, provenance, and governance controls.
 - `video-script`, `short-form-hooks`, `thumbnail-title-brief`,
-  `caption-writer`, `podcast-outline`, and `content-calendar`: support scripts,
-  hooks, thumbnails, captions, voiceover/podcast structures, and publishing
-  plans.
+  `social-asset-production`, `caption-writer`, `podcast-outline`, and
+  `content-calendar`: support scripts, hooks, thumbnails, social visuals,
+  captions, voiceover/podcast structures, and publishing plans.
 - `creator-production-ops-brief`: connect AI production to asset handoffs,
   production dependencies, contractors, and approval flow.
 - `concise-technical-writing`: tighten briefs, prompt packs, and reviewer notes.
@@ -89,7 +92,7 @@ unless the user explicitly approves a specific action.
 ## Acceptance Criteria
 
 - The bundle installs with a dry run.
-- AI content planning, image prompt, video prompt, synthetic character,
+- AI content planning, image prompt, video prompt pack, synthetic character,
   voiceover, batch workflow, and authenticity review scenarios route to intended
   skills.
 - Outputs include concrete artifacts: AI production brief, prompt pack,

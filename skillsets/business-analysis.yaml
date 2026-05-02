@@ -1,0 +1,17 @@
+name: business-analysis
+description: Business analysis workflows for guided discovery, BRDs, stakeholder requirements, scope, process impacts, traceability, validation, and implementation-ready handoff.
+skills:
+  - guided-requirements-interview
+  - business-requirements-document
+  - feedback-synthesis
+  - customer-research-validation
+  - competitive-market-research
+  - product-brainstorming-planning
+  - write-spec
+  - acceptance-criteria-mapper
+  - product-analytics-instrumentation
+  - decision-memo
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.business-analysis.md

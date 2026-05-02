@@ -16,11 +16,12 @@ is cut.
 
 ## v0.2.0 - 2026-04-30
 
-- Expanded from 42 to 162 validated skill files.
-- Expanded from 7 to 32 validated skillsets.
-- Added 25 role-based alpha bundles across executive, creator, engineering,
-  documentation, AgentOps, security, data, and operations workflows.
-- Added 117 routing scenarios and expected-routing validation.
+- Expanded from 42 to 164 validated skill files.
+- Expanded from 7 to 33 validated skillsets.
+- Added 26 role-based alpha bundles across executive, creator, engineering,
+  business analysis, documentation, AgentOps, security, data, and operations
+  workflows.
+- Added 120 routing scenarios and expected-routing validation.
 - Added bundle briefs, setup guides, compatibility docs, examples, and
   vendor-neutrality guidance.
 - Added evaluation templates, proof packets, before/after reports, quality

@@ -14,6 +14,7 @@ For the current baseline decisions, see
 | `support-success` | Support and customer success | alpha | Ticket triage, safe replies, escalation, KB |
 | `engineering-delivery` | Software engineering delivery | alpha | Issue planning, PR review, regression, release risk |
 | `product-research` | Product management and research | alpha | Feedback synthesis, PRDs, validation, analytics |
+| `business-analysis` | Business analysis and requirements | alpha | Guided discovery, BRDs, stakeholder requirements, traceability |
 | `revenue-growth` | Revenue, GTM, sales, and marketing | alpha | Composed from existing sales/marketing skills |
 | `analytics-finance` | Analytics and finance operations | alpha | Read-first narratives, variance, close checklists |
 | `executive-command-center` | Executive operating system | alpha | Executive briefs, decisions, risks, and action tracking |
@@ -56,6 +57,7 @@ For the current baseline decisions, see
 | Sales enablement, GTM, outbound, campaigns | `revenue-growth` | More precise approval-aware revenue workflow |
 | Broad sales and marketing | `sales-marketing` or `revenue-growth` | Keep `sales-marketing` for broad legacy use |
 | Product discovery, feedback, PRDs | `product-research` | Product-facing evidence-to-spec workflow |
+| BRDs, stakeholder requirements, business scope | `business-analysis` | Business-facing requirements before solution design |
 | General customer/market validation | `research-validation` | Broader evidence utility outside product work |
 | QA, release, PR review, issue planning | `engineering-delivery` | Delivery workflow rather than standalone QA bundle |
 | Support operations and success handoffs | `support-success` | Clear reviewable workflow with safety gates |

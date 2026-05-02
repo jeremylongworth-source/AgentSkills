@@ -20,10 +20,10 @@ should be described as proven workflows.
 
 ## Included Scope
 
-- 162 validated skill files.
-- 32 validated skillsets.
-- 117 routing scenarios.
-- 25 new role-based alpha bundles.
+- 164 validated skill files.
+- 33 validated skillsets.
+- 120 routing scenarios.
+- 26 new role-based alpha bundles.
 - Evaluation proof layer with packets, reports, quality rubric, and security
   review template.
 - Release gate with all skillset dry-runs, fresh Codex home smoke test,

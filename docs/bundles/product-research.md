@@ -13,6 +13,8 @@ engineering leads shaping product work.
 
 ## Included Skills
 
+- `guided-requirements-interview`: ask focused questions when product context is
+  incomplete before drafting a PRD or product brief.
 - `feedback-synthesis`: cluster feedback into themes, evidence, confidence, and
   opportunities.
 - `write-spec`: turn evidence and decisions into PRDs, feature specs, and

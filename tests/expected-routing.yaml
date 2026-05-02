@@ -175,6 +175,20 @@ product-spec-review:
   - product-analytics-instrumentation
   - experiment-design-validation
   - concise-technical-writing
+business-requirements-document:
+  - business-requirements-document
+  - feedback-synthesis
+  - customer-research-validation
+  - product-brainstorming-planning
+  - acceptance-criteria-mapper
+  - product-analytics-instrumentation
+  - concise-technical-writing
+guided-requirements-interview:
+  - guided-requirements-interview
+  - business-requirements-document
+  - product-brainstorming-planning
+  - acceptance-criteria-mapper
+  - concise-technical-writing
 revenue-account-outreach:
   - growth-strategy-orchestration
   - account-based-marketing
@@ -218,6 +232,12 @@ agentops-overhead-review:
   - skill-token-overhead-review
   - before-after-evaluation
   - skill-output-scoring
+agentops-skill-chaining-overhead-review:
+  - skill-token-overhead-review
+  - skill-benchmark-design
+  - skill-evaluation-iteration
+  - before-after-evaluation
+  - scenario-test-authoring
 skill-security-third-party-install:
   - skill-threat-model
   - prompt-injection-review

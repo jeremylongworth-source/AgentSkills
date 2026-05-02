@@ -1,6 +1,7 @@
 name: product-research
 description: Product research workflows for feedback synthesis, PRDs, customer evidence, competitive research, experiments, analytics, and product decisions.
 skills:
+  - guided-requirements-interview
   - feedback-synthesis
   - write-spec
   - product-brainstorming-planning

@@ -1,4 +1,4 @@
-﻿# AgentSkills
+# AgentSkills
 
 Portable Agent Skills, skillsets, MCP presets, and routing templates for AI coding agents.
 
@@ -52,6 +52,7 @@ Install a local Codex skillset from a cloned repo:
 | `sales-marketing` | GTM, positioning, paid media, lifecycle |
 | `frontend-product` | React, Tailwind, UX, accessibility |
 | `product-research` | Feedback synthesis, PRDs, experiments, analytics |
+| `business-analysis` | Guided discovery, BRDs, stakeholder requirements, traceability |
 | `analytics-finance` | KPI narratives, variance commentary, close checklists |
 | `research-validation` | Competitive research, experiments, analytics |
 | `llm-skill-authoring` | Creating and validating new agent skills |
@@ -99,9 +100,9 @@ Install a local Codex skillset from a cloned repo:
 
 Current v0.2 development gate:
 
-- 162 validated skill files
-- 32 validated skillsets
-- 117 routing scenarios
+- 164 validated skill files
+- 33 validated skillsets
+- 120 routing scenarios
 - all skillset install dry-runs pass
 - fresh Codex home install smoke passes for `game-dev` and `all`
 - `gh skill publish --dry-run` returns `ok`
@@ -120,6 +121,8 @@ Use AgentSkills when you want an AI coding agent to behave more like a specialis
 - Plan and implement a Three.js interactive page
 - Prepare a product launch workflow
 - Synthesize product feedback into a reviewed PRD
+- Use a guided "grill me" interview to fill requirement gaps before drafting
+- Turn stakeholder notes into a BRD with traceable business requirements
 - Triage support tickets and draft reviewed customer replies
 - Draft KPI narratives and variance commentary for review
 - Run structured competitive research
@@ -201,6 +204,8 @@ For the first expanded business bundle, see the
 [support success brief](docs/bundles/support-success.md).
 For skill and bundle evaluation workflows, see the
 [agentops evaluation brief](docs/bundles/agentops-evaluation.md).
+For business analysis and BRD workflows, see the
+[business analysis brief](docs/bundles/business-analysis.md).
 For skill install and publish review workflows, see the
 [skill security audit brief](docs/bundles/skill-security-audit.md).
 For documentation workflows, see the

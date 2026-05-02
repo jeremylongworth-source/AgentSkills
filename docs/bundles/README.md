@@ -13,6 +13,7 @@ Current expanded bundle briefs:
 - [support-success](support-success.md)
 - [engineering-delivery](engineering-delivery.md)
 - [product-research](product-research.md)
+- [business-analysis](business-analysis.md)
 - [revenue-growth](revenue-growth.md)
 - [analytics-finance](analytics-finance.md)
 - [agentops-evaluation](agentops-evaluation.md)

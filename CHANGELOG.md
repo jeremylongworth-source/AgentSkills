@@ -5,6 +5,10 @@ is cut.
 
 ## Unreleased
 
+No unreleased changes.
+
+## v0.2.2 - 2026-05-05
+
 - Added `agentskills-project-onboarding` for focused AgentSkills setup in new
   or existing repositories.
 - Added a forward-test report and before/after example for focused AgentSkills

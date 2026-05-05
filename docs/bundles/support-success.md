@@ -3,8 +3,9 @@
 ## Problem
 
 Support and customer success teams need agents to help triage tickets, draft
-safe replies, prepare escalations, and turn resolutions into reusable knowledge
-without sending messages or changing accounts automatically.
+safe replies, prepare escalations, turn resolutions into reusable knowledge, and
+review account health without sending messages or changing accounts
+automatically.
 
 ## Target User
 
@@ -21,8 +22,12 @@ small teams handling customer issues.
   billing, security, or leadership review.
 - `kb-from-resolution`: turn resolved issues into reviewable knowledge base
   articles.
+- `customer-health-review`: prepare account health reviews, QBR briefs,
+  adoption plans, renewal risk summaries, and customer success action plans.
 - `customer-research-validation`: synthesize recurring ticket themes into
   customer evidence.
+- `retention-analysis`: define or interpret retention, churn, renewal, and
+  account engagement signals.
 - `product-analytics-instrumentation`: define support telemetry and quality
   signals.
 - `concise-technical-writing`: tighten replies, summaries, and KB articles.
@@ -36,6 +41,8 @@ small teams handling customer issues.
 - `KB_STYLE_GUIDE.md`: article style, structure, audience, and review process.
 - `PRODUCT_GLOSSARY.md`: product names, feature names, plan names, and approved
   terminology.
+- `CUSTOMER_HEALTH_CONTEXT.md`: account health inputs, promised outcomes,
+  review rules, and approval owners.
 
 ## MCP Preset Intent
 
@@ -49,6 +56,8 @@ verified. Keep customer systems read-only by default.
   support records without approval.
 - Do not invent refunds, SLAs, policy exceptions, commitments, incident status,
   security claims, or product behavior.
+- Do not invent usage, renewal terms, contract facts, customer quotes, health
+  scores, or account outcomes.
 - Escalate when policy is missing, customer impact is unclear, legal/security
   risk appears, or the requested action affects money, access, or data.
 
@@ -56,15 +65,21 @@ verified. Keep customer systems read-only by default.
 
 - Operational: median first-response draft time.
 - Quality: reviewer QA score and correction rate.
-- Adoption: percentage of drafts accepted with light edits.
-- Economic: resolved conversations or reusable KB articles per support hour.
+- Adoption: percentage of drafts, health reviews, or KB articles accepted with
+  light edits.
+- Economic: resolved conversations, reusable KB articles, or account-review
+  prep time saved per support/success hour.
 
 ## Acceptance Criteria
 
 - The bundle installs with a dry run.
 - A support ticket scenario routes to triage, reply drafting, escalation, and
   KB skills.
+- Account health scenarios route to customer health, retention, customer
+  evidence, analytics, and writing skills.
 - Reply drafts separate customer-facing copy from internal assumptions.
 - Escalation packs include severity, impact, evidence, owner, and requested
   decision.
 - KB drafts include audience, symptoms, cause, resolution, and verification.
+- Account reviews include health signals, missing evidence, risks, next actions,
+  and customer-facing review gates.

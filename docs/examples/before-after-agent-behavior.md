@@ -258,6 +258,30 @@ With `support-success`, expected routing is:
 Expected output separates triage notes, internal assumptions, escalation needs,
 and the customer-facing draft.
 
+## AgentSkills Project Onboarding
+
+Prompt:
+
+```text
+Set up AgentSkills in this new repo so the agent stays focused.
+```
+
+Without AgentSkills, the agent may give generic install commands, recommend a
+large bundle, skip repo inspection, overwrite existing project instructions, or
+omit verification.
+
+With `agentskills-project-onboarding`, expected routing is:
+
+- `agentskills-project-onboarding` inspects repo signals and recommends the
+  smallest useful skillset or atomic skill list
+- `safe-install-checklist` reviews install and MCP safety boundaries
+- `developer-onboarding` helps preserve local setup and validation commands
+- `concise-technical-writing` keeps the project routing section short
+
+Expected output includes a repo readout, focused skill recommendation, project
+versus user scope rationale, `AGENTS.md` patch plan, MCP rationale, verification
+prompt, approval-gated install steps, and rollback notes.
+
 ## Skill Authoring
 
 Prompt:

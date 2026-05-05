@@ -2,9 +2,10 @@
 
 ## Problem
 
-Revenue teams need agents to prepare GTM plans, account research, approved
-outreach drafts, campaign briefs, sales materials, pricing tests, and funnel
-measurement without sending messages or changing revenue systems automatically.
+Revenue teams need agents to prepare GTM plans, account research, pipeline
+reviews, approved outreach drafts, campaign briefs, sales materials, pricing
+tests, and funnel measurement without sending messages or changing revenue
+systems automatically.
 
 ## Target User
 
@@ -22,6 +23,8 @@ teams working on pipeline and conversion.
 - `account-based-marketing`: plan named-account and buying-committee plays.
 - `competitive-market-research`: validate category, competitor, and market
   evidence.
+- `sales-pipeline-management`: design stages, qualification standards, CRM
+  hygiene, deal reviews, and forecast cadence.
 - `sales-prospecting-outreach`: draft compliant outreach and reply handling.
 - `sales-conversion-enablement`: prepare discovery, demos, proposals, and close
   plans.
@@ -52,6 +55,8 @@ read-only unless a reviewer approves a write action.
 - Never send outbound messages automatically.
 - Never launch paid campaigns, change CRM records, update pricing, or commit
   discounts without approval.
+- Never invent pipeline, forecast, close-date, buyer-process, CRM, or revenue
+  facts.
 - Verify current official platform guidance before tactical advice about ad
   objectives, SEO platform behavior, CRM features, email compliance, or tracking
   configuration.
@@ -67,8 +72,8 @@ read-only unless a reviewer approves a write action.
 ## Acceptance Criteria
 
 - The bundle installs with a dry run.
-- Account research and outreach scenarios route to ABM, research, prospecting,
-  sales enablement, and writing skills.
+- Account research, pipeline, and outreach scenarios route to ABM, research,
+  pipeline, prospecting, sales enablement, and writing skills.
 - Social profile audit, launch pack, social asset, and AI video prompt
   scenarios route to the intended growth and creative skills.
 - Outputs distinguish internal notes from customer-facing copy.

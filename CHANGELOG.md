@@ -5,6 +5,17 @@ is cut.
 
 ## Unreleased
 
+- Added `agentskills-project-onboarding` for focused AgentSkills setup in new
+  or existing repositories.
+- Added a forward-test report and before/after example for focused AgentSkills
+  project onboarding.
+- Added `customer-health-review` for customer success account health, renewal
+  risk, QBR, adoption, and success-plan workflows.
+- Strengthened `revenue-growth` with sales pipeline management and added
+  pipeline/customer-health routing scenarios.
+- Added a lean-company operating model roadmap note for the first-five-hires
+  expansion lens.
+
 ## v0.2.1 - 2026-04-30
 
 - Added a stable release plan that separates distribution stability from alpha
@@ -16,12 +27,12 @@ is cut.
 
 ## v0.2.0 - 2026-04-30
 
-- Expanded from 42 to 164 validated skill files.
+- Expanded from 42 to 166 validated skill files.
 - Expanded from 7 to 33 validated skillsets.
 - Added 26 role-based alpha bundles across executive, creator, engineering,
   business analysis, documentation, AgentOps, security, data, and operations
   workflows.
-- Added 120 routing scenarios and expected-routing validation.
+- Added 123 routing scenarios and expected-routing validation.
 - Added bundle briefs, setup guides, compatibility docs, examples, and
   vendor-neutrality guidance.
 - Added evaluation templates, proof packets, before/after reports, quality

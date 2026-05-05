@@ -28,6 +28,11 @@ skill-improvement:
   - skill-evaluation-iteration
   - sales-conversion-enablement
   - concise-technical-writing
+agentskills-project-onboarding:
+  - agentskills-project-onboarding
+  - safe-install-checklist
+  - developer-onboarding
+  - concise-technical-writing
 executive-weekly-brief:
   - executive-briefing
   - metric-narrative
@@ -146,6 +151,12 @@ support-security-escalation:
 support-kb-from-resolution:
   - kb-from-resolution
   - concise-technical-writing
+support-customer-health-review:
+  - customer-health-review
+  - retention-analysis
+  - customer-research-validation
+  - product-analytics-instrumentation
+  - concise-technical-writing
 engineering-issue-plan:
   - issue-to-plan
   - regression-check
@@ -203,6 +214,12 @@ revenue-campaign-brief:
   - paid-media-growth
   - marketing-analytics-attribution
   - experiment-design-validation
+revenue-pipeline-review:
+  - growth-strategy-orchestration
+  - sales-pipeline-management
+  - marketing-analytics-attribution
+  - experiment-design-validation
+  - concise-technical-writing
 analytics-kpi-narrative:
   - metric-narrative
   - variance-commentary

@@ -14,6 +14,8 @@ For the executive expansion, see
 [executive skillsets roadmap](executive-skillsets-roadmap.md).
 For the creator and influencer expansion, see
 [creator skillsets roadmap](creator-skillsets-roadmap.md).
+For the lean-company first-five-hires expansion lens, see
+[lean company operating model](lean-company-operating-model.md).
 
 ## Product Thesis
 
@@ -69,6 +71,7 @@ Already in place:
 - dynamic MCP preset parsing from `mcp/presets/*.toml`
 - route coverage scenarios for the top-five expansion bundles
 - bundle expansion map for reviewing new bundle proposals
+- lean-company first-five-hires map for role leverage and gap review
 
 This gives us enough foundation to add new bundles without creating a larger
 platform layer.

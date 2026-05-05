@@ -19,6 +19,9 @@ franchise operators, and practical owner-operators.
   options.
 - `vendor-negotiation-prep`: prepare vendor renewal and negotiation briefs.
 - `ops-bottleneck-review`: map operational bottlenecks and practical fixes.
+- `action-tracker`: turn owner decisions, cash actions, vendor follow-ups,
+  pricing changes, and operations fixes into owners, deadlines, blockers, and
+  follow-through.
 - `metric-narrative` and `variance-commentary`: explain supplied metrics and
   changes.
 - `pricing-packaging-strategy`: support pricing and packaging context.

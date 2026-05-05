@@ -20,9 +20,9 @@ should be described as proven workflows.
 
 ## Included Scope
 
-- 164 validated skill files.
+- 166 validated skill files.
 - 33 validated skillsets.
-- 120 routing scenarios.
+- 123 routing scenarios.
 - 26 new role-based alpha bundles.
 - Evaluation proof layer with packets, reports, quality rubric, and security
   review template.

@@ -119,6 +119,7 @@ Mapping artifacts:
 
 - [bundle expansion map](bundle-expansion-map.md)
 - [bundle expansion decisions](bundle-expansion-decisions.md)
+- [lean company operating model](lean-company-operating-model.md)
 - [executive skillsets roadmap](executive-skillsets-roadmap.md)
 - [creator skillsets roadmap](creator-skillsets-roadmap.md)
 - [evaluation proof layer](evaluation/README.md)

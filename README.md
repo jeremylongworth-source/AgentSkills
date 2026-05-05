@@ -47,8 +47,8 @@ Install a local Codex skillset from a cloned repo:
 | `owner-operator-os` | Owner dashboards, cash-flow triage, pricing, vendors, ops |
 | `operating-cadence` | Leadership meetings, OKRs, decisions, MBRs, follow-up |
 | `engineering-delivery` | Issue planning, PR review, regression, release risk |
-| `support-success` | Support triage, safe replies, escalations, KB drafts |
-| `revenue-growth` | Account research, approved outreach, campaigns, funnel |
+| `support-success` | Support triage, safe replies, escalations, KB drafts, account health |
+| `revenue-growth` | Account research, pipeline, approved outreach, campaigns, funnel |
 | `sales-marketing` | GTM, positioning, paid media, lifecycle |
 | `frontend-product` | React, Tailwind, UX, accessibility |
 | `product-research` | Feedback synthesis, PRDs, experiments, analytics |
@@ -100,9 +100,9 @@ Install a local Codex skillset from a cloned repo:
 
 Current v0.2 development gate:
 
-- 164 validated skill files
+- 166 validated skill files
 - 33 validated skillsets
-- 120 routing scenarios
+- 123 routing scenarios
 - all skillset install dry-runs pass
 - fresh Codex home install smoke passes for `game-dev` and `all`
 - `gh skill publish --dry-run` returns `ok`
@@ -111,6 +111,7 @@ Current v0.2 development gate:
 
 Use AgentSkills when you want an AI coding agent to behave more like a specialist:
 
+- Onboard AgentSkills into a new repo with focused project routing
 - Build and QA an HTML5 game
 - Prepare a weekly executive brief and decision memo
 - Draft investor updates and fundraising readiness artifacts
@@ -263,6 +264,11 @@ For release details, see
 [v0.2.1 release notes](docs/release-notes/v0.2.1.md).
 
 ## Suggested first skillset
+
+For a new repository where you want focused AgentSkills setup, start with the
+`agentskills-project-onboarding` skill. It should inspect the repo, recommend a
+minimal skillset or small skill list, draft project routing guidance, and give
+verification steps before install commands are run.
 
 For game development or interactive browser work, start with:
 

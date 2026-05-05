@@ -50,6 +50,7 @@ portfolio. Use it as the baseline when reviewing the next expansion document.
 | Quality/testing | `quality-testing` | Built as a standalone bundle because test planning deserves first-class routing |
 | Data analytics/BI | `data-analytics-bi` | Built as a data-decision bundle distinct from finance close work |
 | Customer success/support | `support-success` | Keep as canonical; add success/renewal skills only if new scenarios justify them |
+| Customer success/account management | `support-success` | Strengthen support-success with account health, retention, QBR, renewal risk, and adoption workflows before splitting |
 | Creator and influencer workflows | `creator-content-engine`, `creator-brand-deals`, `creator-analytics-reporting`, `creator-monetization`, `creator-business-ops`, `creator-community`, `creator-reputation-risk`, and `creator-ai-production` | Build platform expansion or live/event bundles only after real-input validation proves the core loop |
 
 ## Deferred Candidates
@@ -71,6 +72,7 @@ portfolio. Use it as the baseline when reviewing the next expansion document.
 | `creator-community` | created alpha | comment/DM triage, fan feedback, moderation, audience research, and community event scenarios |
 | `creator-reputation-risk` | created alpha | platform policy, disclosure, copyright, AI labeling, brand safety, and controversy response review scenarios |
 | `creator-ai-production` | created alpha | AI content workflow, image/video/audio prompt packs, synthetic character bible, and batch production scenarios |
+| `systems-automation` | compose first | Internal-tool, dashboard, form, integration, workflow automation, data-access, QA, and release scenarios |
 | `ops-pmo` | defer | SOP, project risk, status update, postmortem, and meeting-summary scenarios |
 | `owner-operator-os` | create alpha | Cash-flow, pricing, vendor negotiation, delegation, and owner dashboard scenarios |
 | `operating-cadence` | composed alpha | Split into new atomic skills only if leadership cadence scenarios reveal gaps |

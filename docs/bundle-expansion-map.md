@@ -48,7 +48,7 @@ For the current baseline decisions, see
 | `devops-cloud-release` | Developers and release owners | created alpha | Deployment plan, CI/CD, containerization, env config, rollback, readiness |
 | `quality-testing` | Developers and QA leads | created alpha | Unit, integration, E2E, bug reproduction, QA matrix, accessibility and performance tests |
 | `data-analytics-bi` | Analysts, founders, operators, product managers | created alpha | Metrics dictionary, dashboards, cohorts, funnels, retention, experiment readouts |
-| `customer-success-support` | Support and success teams | alias or merge | Already covered by `support-success`; add renewal/customer health later if scenarios justify split |
+| `customer-success-support` | Support and success teams | alias or merge | Already covered by `support-success`; account health is now merged there before any split |
 
 ## Alias and Overlap Decisions
 
@@ -61,6 +61,7 @@ For the current baseline decisions, see
 | General customer/market validation | `research-validation` | Broader evidence utility outside product work |
 | QA, release, PR review, issue planning | `engineering-delivery` | Delivery workflow rather than standalone QA bundle |
 | Support operations and success handoffs | `support-success` | Clear reviewable workflow with safety gates |
+| Customer health, QBRs, renewal risk, adoption plans | `support-success` | Strengthen support-success before splitting account management into a separate bundle |
 | KPI reporting and finance close | `analytics-finance` | Read-first reporting and review workflow |
 | Executive decisions, CEO briefs, risk registers | `executive-command-center` | New flagship executive bundle |
 | Fundraising and investor relations | `founder-fundraising-ir` | New founder-facing workflow with legal/financial review gates |
@@ -111,6 +112,8 @@ For the current baseline decisions, see
 | `data-engineering` | Compose first | Reuse `backend-api`, `data-analytics-bi`, and `engineering-delivery` until pipeline work recurs |
 | `knowledge-management` | Compose first | Reuse `technical-documentation` and support KB skills before creating a separate bundle |
 | `revops-pipeline` | Compose first | Reuse `revenue-growth` and `analytics-finance`; add forecast/CRM scenarios first |
+| `systems-automation` | Compose first | Reuse business analysis, frontend, backend, data, QA, and release bundles until internal-tool and integration scenarios recur |
+| `customer-success-account-management` | Merge first | Strengthen `support-success` with account health, renewal, QBR, and adoption scenarios before splitting |
 | `ops-pmo` | Defer or compose | Clear recurring artifacts: SOP, postmortem, status update, project risk review |
 | `people-talent` | Defer | Policy/privacy gates and strong context templates |
 | `partnerships-ma` | Defer | Diligence, negotiation, and integration-risk review gates |

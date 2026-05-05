@@ -41,6 +41,7 @@ Validation reports:
 
 Forward-test reports:
 
+- [agentskills-project-onboarding](reports/agentskills-project-onboarding-forward-test.md)
 - [creator-content-engine](reports/creator-content-engine-forward-test.md)
 - [creator-brand-deals](reports/creator-brand-deals-forward-test.md)
 - [creator-analytics-reporting](reports/creator-analytics-reporting-forward-test.md)

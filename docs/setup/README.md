@@ -9,6 +9,12 @@ For portability rules, see [vendor neutrality](../vendor-neutrality.md).
 
 ## Choose an install path
 
+If you are setting up AgentSkills in a new repository, use
+`agentskills-project-onboarding` first. It should inspect the repo, recommend a
+focused skillset or small set of atomic skills, decide project versus user
+scope, draft project routing guidance, and define verification steps before
+install commands are run.
+
 Use `gh skill install` when you want a convenient host-specific installer for
 one or more atomic skills. You can also copy skill folders manually into a
 host-supported skill path.

@@ -13,9 +13,14 @@ Thumbs.db
 *.tmp
 *.bak
 .codex-test*/
+.playwright-mcp/
 .pytest_cache/
 __pycache__/
 *.pyc
+
+# Local audit and visual review artifacts
+ironfield*.json
+ironfield*.png
 
 # Local build and dependency output
 node_modules/

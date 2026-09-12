@@ -1,0 +1,19 @@
+name: creator-youtube-local-production
+description: Human-reviewed local YouTube production workflows for recurring narrated explainer videos, topic backlogs, scripts, assets, FFMPEG assembly, validation, and publishing QA.
+skills:
+  - content-pillars
+  - content-calendar
+  - video-script
+  - thumbnail-title-brief
+  - ai-media-prompt-brief
+  - ai-video-prompt-pack
+  - social-asset-production
+  - local-video-assembly
+  - creator-production-ops-brief
+  - publishing-checklist
+  - usage-rights-checklist
+  - creator-reputation-risk-review
+  - concise-technical-writing
+mcp_presets:
+  - docs-research
+agents_file: agents/AGENTS.creator-youtube-local-production.md

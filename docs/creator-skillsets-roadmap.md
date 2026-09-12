@@ -37,6 +37,7 @@ without abandoning the current portable, artifact-first model.
 | `creator-business-ops` | alpha | Run the creator business | weekly creator ops dashboard |
 | `creator-reputation-risk` | alpha | Protect trust | reputation risk checklist |
 | `creator-ai-production` | alpha | Use AI safely in production | AI content workflow |
+| `creator-youtube-local-production` | alpha | Produce local YouTube explainers | reviewed MP4 episode package |
 | `creator-platform-expansion` | defer | Expand across channels | platform expansion plan |
 | `creator-live-events` | defer | Move into events and IRL formats | event launch plan |
 
@@ -62,8 +63,9 @@ Reason: these turn attention into a repeatable business.
 
 7. `creator-reputation-risk` - alpha
 8. `creator-ai-production` - alpha
-9. `creator-platform-expansion`
-10. `creator-live-events`
+9. `creator-youtube-local-production` - alpha
+10. `creator-platform-expansion`
+11. `creator-live-events`
 
 Reason: these need stronger platform-specific freshness, disclosure, copyright,
 and reputation boundaries.
@@ -105,4 +107,6 @@ moderation notes, poll results, and event inputs, and forward-test
 asset rights notes, sponsor campaign briefs, and backlash packets, and
 forward-test `creator-ai-production` with anonymized AI content plans, prompt
 packs, source asset notes, synthetic character concepts, and voiceover
-workflows before building platform-expansion or live/event bundles.
+workflows, and forward-test `creator-youtube-local-production` with reviewed
+topic backlogs, render manifests, local FFMPEG exports, and publishing QA notes
+before building platform-expansion or live/event bundles.

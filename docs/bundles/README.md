@@ -31,6 +31,7 @@ Current expanded bundle briefs:
 - [creator-community](creator-community.md)
 - [creator-reputation-risk](creator-reputation-risk.md)
 - [creator-ai-production](creator-ai-production.md)
+- [creator-youtube-local-production](creator-youtube-local-production.md)
 
 Use the [bundle brief template](../../templates/bundles/bundle-brief.md) for
 new bundles and the

@@ -29,6 +29,7 @@ portfolio. Use it as the baseline when reviewing the next expansion document.
 | Creator community operations | compose alpha | `creator-community` | Reuses support, research, content, and analytics skills while adding community triage and moderation briefs |
 | Creator reputation risk | compose alpha | `creator-reputation-risk` | Reuses publishing, rights, AI governance, community, escalation, risk, and sponsor skills while adding one reputation review skill |
 | Creator AI production | compose alpha | `creator-ai-production` | Reuses content, publishing, rights, reputation, production, and AI governance skills while adding media prompt briefs and synthetic character bibles |
+| Creator YouTube local production | compose alpha | `creator-youtube-local-production` | Reuses creator content, AI production, rights, and publishing skills while adding local FFMPEG assembly and validation |
 
 ## Earlier Suggested Additions
 
@@ -51,7 +52,7 @@ portfolio. Use it as the baseline when reviewing the next expansion document.
 | Data analytics/BI | `data-analytics-bi` | Built as a data-decision bundle distinct from finance close work |
 | Customer success/support | `support-success` | Keep as canonical; add success/renewal skills only if new scenarios justify them |
 | Customer success/account management | `support-success` | Strengthen support-success with account health, retention, QBR, renewal risk, and adoption workflows before splitting |
-| Creator and influencer workflows | `creator-content-engine`, `creator-brand-deals`, `creator-analytics-reporting`, `creator-monetization`, `creator-business-ops`, `creator-community`, `creator-reputation-risk`, and `creator-ai-production` | Build platform expansion or live/event bundles only after real-input validation proves the core loop |
+| Creator and influencer workflows | `creator-content-engine`, `creator-brand-deals`, `creator-analytics-reporting`, `creator-monetization`, `creator-business-ops`, `creator-community`, `creator-reputation-risk`, `creator-ai-production`, and `creator-youtube-local-production` | Build platform expansion or live/event bundles only after real-input validation proves the core loop |
 
 ## Deferred Candidates
 
@@ -72,6 +73,7 @@ portfolio. Use it as the baseline when reviewing the next expansion document.
 | `creator-community` | created alpha | comment/DM triage, fan feedback, moderation, audience research, and community event scenarios |
 | `creator-reputation-risk` | created alpha | platform policy, disclosure, copyright, AI labeling, brand safety, and controversy response review scenarios |
 | `creator-ai-production` | created alpha | AI content workflow, image/video/audio prompt packs, synthetic character bible, and batch production scenarios |
+| `creator-youtube-local-production` | created alpha | Topic backlog, local video assembly, render manifest, FFMPEG validation, and publishing QA scenario |
 | `systems-automation` | compose first | Internal-tool, dashboard, form, integration, workflow automation, data-access, QA, and release scenarios |
 | `ops-pmo` | defer | SOP, project risk, status update, postmortem, and meeting-summary scenarios |
 | `owner-operator-os` | create alpha | Cash-flow, pricing, vendor negotiation, delegation, and owner dashboard scenarios |

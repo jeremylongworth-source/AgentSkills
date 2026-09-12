@@ -30,6 +30,7 @@ For the current baseline decisions, see
 | `creator-community` | Creator community operations | alpha | Comment/DM triage, moderation briefs, feedback, polls, engagement plans |
 | `creator-reputation-risk` | Creator trust and reputation review | alpha | Disclosure, rights, AI-labeling, brand safety, platform-policy, response risk |
 | `creator-ai-production` | Creator AI production planning | alpha | AI media prompt briefs, synthetic characters, provenance, disclosure, review gates |
+| `creator-youtube-local-production` | Creator local YouTube production | alpha | Topic backlogs, narrated explainers, FFMPEG assembly, publishing QA |
 | `game-dev` | Game development | existing | Domain-specific creative/software bundle |
 | `html5-game-publishing` | Browser game publishing | existing | Focused game publishing workflow |
 | `frontend-product` | Frontend product delivery | existing | Product/frontend/UX implementation quality |
@@ -79,6 +80,7 @@ For the current baseline decisions, see
 | Creator community, comments, DMs, moderation, polls | `creator-community` | New composed creator audience workflow |
 | Creator reputation, disclosure, copyright, AI labeling, brand safety | `creator-reputation-risk` | New composed review-only creator trust workflow |
 | Creator AI production, synthetic personas, prompt briefs | `creator-ai-production` | New composed provider-neutral AI production planning workflow |
+| Creator YouTube topic backlogs, local video assembly, FFMPEG exports | `creator-youtube-local-production` | New composed local production workflow with one FFMPEG assembly skill |
 | Creator-owned products, affiliates, merch, courses, memberships | `creator-monetization` | New composed creator owned-revenue workflow |
 | Creator sponsor pipeline, invoices, budgets, contractors, assets | `creator-business-ops` | New composed creator operations workflow |
 
@@ -101,6 +103,7 @@ For the current baseline decisions, see
 | `creator-community` | Created alpha | Comment/DM triage, moderation, feedback synthesis, poll, engagement, and event scenarios |
 | `creator-reputation-risk` | Created alpha | Sponsored disclosure, AI labeling, rights, brand-safety, controversy, and platform-policy scenarios |
 | `creator-ai-production` | Created alpha | AI content workflow, prompt pack, synthetic character, voiceover, and batch production scenarios |
+| `creator-youtube-local-production` | Created alpha | Topic backlog, script, media prompts, render manifest, FFMPEG validation, and publishing QA scenario |
 | `executive-command-center` | Created alpha | Brief, decision memo, risk register, leadership agenda scenarios |
 | `founder-fundraising-ir` | Created alpha | Investor update, data room, diligence, and fundraising disclaimer templates |
 | `ai-transformation-governance` | Created alpha | AI use-case portfolio, pilot scorecard, risk register, governance checklist |

@@ -631,6 +631,20 @@ creator-ai-batch-production-plan:
   - content-calendar
   - ai-media-prompt-brief
   - publishing-checklist
+creator-youtube-local-production:
+  - content-pillars
+  - content-calendar
+  - video-script
+  - thumbnail-title-brief
+  - ai-media-prompt-brief
+  - ai-video-prompt-pack
+  - social-asset-production
+  - local-video-assembly
+  - creator-production-ops-brief
+  - publishing-checklist
+  - usage-rights-checklist
+  - creator-reputation-risk-review
+  - concise-technical-writing
 owned-social-profile-audit:
   - owned-social-profile-audit
   - marketing-positioning-strategy

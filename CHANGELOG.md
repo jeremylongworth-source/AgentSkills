@@ -5,7 +5,14 @@ is cut.
 
 ## Unreleased
 
-No unreleased changes.
+- Added `local-video-assembly` for FFMPEG render manifests, local video
+  assembly planning, caption handling, MP4 export checks, and `ffprobe`
+  validation.
+- Added `creator-youtube-local-production` for human-reviewed YouTube topic
+  backlogs, narrated explainer packages, local FFMPEG rendering, and publishing
+  QA.
+- Added a local YouTube production routing scenario. Current validation scope
+  is 167 skill files, 34 skillsets, and 124 routing scenarios.
 
 ## v0.2.2 - 2026-05-05
 

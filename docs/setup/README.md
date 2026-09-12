@@ -78,8 +78,8 @@ shopping list for hosts where you install skills one by one.
 
 Available skillsets:
 
-See the [root README](../../README.md#available-skillsets) for the current
-skillset list, or run:
+See the [Skillset Catalog](https://github.com/jeremylongworth-source/AgentSkills/wiki/Skillset-Catalog)
+for the current list, or run:
 
 ```powershell
 .\scripts\list-skillsets.ps1

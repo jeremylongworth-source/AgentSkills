@@ -8,8 +8,9 @@ planning, implementation, research, testing, documentation, release, creator
 operations, and security review. The core content is readable Markdown and
 YAML; host-specific setup stays in adapters and setup guides.
 
-Latest published release: `v0.2.2`. The default branch also contains an
-unreleased development addition for local YouTube production.
+Latest published release: `v0.2.2`. The default branch also contains unreleased
+updates for local YouTube production, scoped Global Foundation installation,
+and Astra instruction guidance.
 
 ## Start Here
 
@@ -34,7 +35,7 @@ gh skill preview jeremylongworth-source/AgentSkills game-threejs-development
 Install a pinned release for Codex:
 
 ```powershell
-gh skill install jeremylongworth-source/AgentSkills game-threejs-development --agent codex --scope user --pin v0.2.2
+gh skill install jeremylongworth-source/AgentSkills game-threejs-development --agent codex --scope project --pin v0.2.2
 ```
 
 Change `--agent` and `--scope` for the host and install target you use. See
@@ -42,13 +43,14 @@ Change `--agent` and `--scope` for the host and install target you use. See
 
 ### Curated skillset
 
-Clone the repository, preview the local install, then install it:
+Clone the repository, preview the local install, then install it. Replace
+`../MyGame` with the path to your existing project:
 
 ```powershell
 git clone https://github.com/jeremylongworth-source/AgentSkills.git
 cd AgentSkills
-.\scripts\install-skillset.ps1 game-dev -DryRun
-.\scripts\install-skillset.ps1 game-dev
+.\scripts\install-skillset.ps1 game-dev -Scope project -ProjectRoot ../MyGame -DryRun
+.\scripts\install-skillset.ps1 game-dev -Scope project -ProjectRoot ../MyGame
 ```
 
 The PowerShell installer is a Codex adapter. For other hosts, use the
@@ -60,6 +62,17 @@ relevant [host setup guide](docs/setup/README.md).
 Start with `agentskills-project-onboarding`. It helps an agent inspect the
 repository, choose the smallest useful skillset, plan routing, identify MCP
 needs, and define verification steps before installation.
+
+For durable personal workflows, install `global-foundation` in user scope:
+
+```powershell
+.\scripts\install-skillset.ps1 global-foundation -Scope user
+```
+
+The adapter installs skills only by default. MCP setup requires `-WithMcp`;
+project routing requires `-Scope project -WithAgents`. Global `AGENTS.md` is
+never changed. See [Codex setup](docs/setup/codex.md) for destinations and the
+optional evaluation extension.
 
 ## Choose a Workflow
 
@@ -90,7 +103,7 @@ The current manifests are: `agentops-evaluation`, `ai-transformation-governance`
 `creator-monetization`, `creator-reputation-risk`,
 `creator-youtube-local-production`, `data-analytics-bi`,
 `devops-cloud-release`, `engineering-delivery`, `executive-command-center`,
-`founder-fundraising-ir`, `frontend-product`, `game-dev`,
+`founder-fundraising-ir`, `frontend-product`, `game-dev`, `global-foundation`,
 `html5-game-publishing`, `llm-skill-authoring`, `operating-cadence`,
 `owner-operator-os`, `product-research`, `quality-testing`,
 `research-validation`, `revenue-growth`, `sales-marketing`,
@@ -112,10 +125,10 @@ The current manifests are: `agentops-evaluation`, `ai-transformation-governance`
 The current default-branch development scope validates:
 
 - 167 skill files
-- 34 skillsets
-- 124 routing scenarios
+- 35 skillsets
+- 125 routing scenarios
 - all skillset install dry-runs
-- fresh Codex home smoke tests for `game-dev` and `all`
+- fresh Codex home smoke tests for `global-foundation`, `game-dev`, and `all`
 - docs consistency, secret, and local-path scans
 
 Run the full local gate before publishing:
@@ -150,6 +163,7 @@ behavior.
 ## Repository Guides
 
 - [Setup guides](docs/setup/README.md)
+- [Using AgentSkills with Astra](docs/setup/astra.md)
 - [Examples](docs/examples/README.md)
 - [Compatibility](docs/compatibility.md)
 - [Troubleshooting](docs/troubleshooting.md)

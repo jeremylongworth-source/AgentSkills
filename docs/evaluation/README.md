@@ -26,6 +26,7 @@ Validation packets:
 - [QUALITY-001](packets/QUALITY-001-release-check-readiness.md)
 - [DEVOPS-001](packets/DEVOPS-001-release-runbook.md)
 - [BACKEND-001](packets/BACKEND-001-script-interface-contract.md)
+- [ASTRA-001 instruction behavior](packets/ASTRA-001-instruction-behavior.md)
 
 Validation reports:
 
@@ -38,6 +39,7 @@ Validation reports:
 - [quality-testing QUALITY-001](reports/quality-testing-QUALITY-001.md)
 - [devops-cloud-release DEVOPS-001](reports/devops-cloud-release-DEVOPS-001.md)
 - [backend-api BACKEND-001](reports/backend-api-BACKEND-001.md)
+- [Astra instruction source review (static; live runs pending)](reports/astra-instruction-review.md)
 
 Forward-test reports:
 

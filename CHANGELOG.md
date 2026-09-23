@@ -5,6 +5,20 @@ is cut.
 
 ## Unreleased
 
+- Added sourced Astra setup guidance, an instruction source review, and eight
+  prompt regression cases. Live model effectiveness remains unmeasured.
+- Clarified authorized follow-through, material clarification questions,
+  planning-only boundaries, focused discovery, and proportionate verification
+  in shared instructions and skills.
+
+- Added `global-foundation` for 13 portable personal workflows, complemented
+  by the host-managed documentation and skill-authoring skills.
+- Codex installation now supports explicit project scope, opt-in MCP setup,
+  and opt-in project routing; global `AGENTS.md` is never changed.
+- Added installer regression coverage for scope, preservation and preflight
+  failure. Current development inventory: 167 skills, 35 skillsets, and 125
+  routing scenarios.
+
 - Added `local-video-assembly` for FFMPEG render manifests, local video
   assembly planning, caption handling, MP4 export checks, and `ffprobe`
   validation.

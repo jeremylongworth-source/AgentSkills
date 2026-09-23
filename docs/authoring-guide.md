@@ -38,6 +38,18 @@ For curated multi-skill installs, use the
 Keep portable skill logic in `SKILL.md`, references, and scripts. Keep
 host-specific setup in adapter metadata and setup docs.
 
+## Instruction Review
+
+State the outcome and domain checks the skill adds. Avoid fixed question
+quotas, mandatory handoff pauses, and test lists that apply to every change.
+Distinguish planning from implementation, recognize authorization already given
+for the same scope, and preserve repository and host review gates. If a skill
+requires a pause, make the reason and required decision explicit.
+
+Keep model configuration in host guides. For the Astra audit and reusable
+prompt cases, see [Astra setup](setup/astra.md) and the
+[regression packet](evaluation/packets/ASTRA-001-instruction-behavior.md).
+
 ## Validation
 
 Run:

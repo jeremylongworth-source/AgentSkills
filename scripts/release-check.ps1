@@ -118,6 +118,11 @@ Invoke-Check "fresh Codex home install smoke" {
   Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/test-fresh-codex-home.ps1') @('-RepoRoot', $RepoRoot)
 }
 
+Invoke-Check "installer scope and preservation regression tests" {
+  python (Join-Path $RepoRoot 'tests/test_install_skillset.py')
+  if ($LASTEXITCODE -ne 0) { throw "Installer regression tests failed." }
+}
+
 Invoke-Check "skillset listing" {
   Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/list-skillsets.ps1') @('-RepoRoot', $RepoRoot, '-Markdown')
 }

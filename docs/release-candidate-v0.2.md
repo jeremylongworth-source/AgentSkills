@@ -78,3 +78,9 @@ accepts the alpha boundaries.
 Hold if validation fails, CI fails without explanation, counts drift, public
 docs are stale, or the release notes imply the new bundles are proven beyond
 their current evidence.
+
+## Subsequent Development Inventory
+
+The current development tree contains 167 skills, 35 skillsets (28 beyond the
+original seven), and 125 routing scenarios. These counts include the unreleased
+Global Foundation addition and are not evidence of a new published release.

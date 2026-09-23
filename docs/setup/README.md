@@ -6,6 +6,8 @@ For task-oriented examples, see [examples](../examples/README.md).
 For host path details, see [compatibility](../compatibility.md).
 For common setup failures, see [troubleshooting](../troubleshooting.md).
 For portability rules, see [vendor neutrality](../vendor-neutrality.md).
+For Astra-specific instruction review and evaluation, see
+[AgentSkills with GPT-6 Astra](astra.md).
 
 ## Choose an install path
 
@@ -21,8 +23,10 @@ host-supported skill path.
 
 Use the repository skillset scripts when you want one of the curated
 AgentSkills skillsets. The PowerShell installer currently targets Codex by
-copying selected skills, adding MCP snippets, and appending the matching
-routing template to the Codex home directory.
+copying selected skills. MCP snippets are opt-in (`-WithMcp`), and routing
+templates can only be appended explicitly in project scope (`-WithAgents`).
+Global `AGENTS.md` is never changed. Use `global-foundation` for user scope;
+choose focused domain bundles for project scope.
 
 Use `agents/AGENTS.*.md` when the host needs a project instruction file instead
 of, or in addition to, native skills.
@@ -59,7 +63,7 @@ gh skill install jeremylongworth-source/AgentSkills --agent github-copilot --sco
 
 | Host | Guide | Best first install |
 |---|---|---|
-| Codex | [Codex](codex.md) | `gh skill install ... --agent codex`, or `.\scripts\install-skillset.ps1 game-dev` |
+| Codex | [Codex](codex.md) | `gh skill install ... --agent codex`, or `.\scripts\install-skillset.ps1 game-dev -Scope project -ProjectRoot ../MyGame` |
 | GitHub Copilot | [GitHub Copilot](github-copilot.md) | `gh skill install ... --agent github-copilot --scope project` |
 | Cursor | [Cursor](cursor.md) | `gh skill install ... --agent cursor --scope project` |
 | Claude Code | [Claude Code](claude-code.md) | `gh skill install ... --agent claude-code --scope user` |
@@ -71,9 +75,9 @@ Skillset manifests live in `skillsets/`. Use them as curated bundles or as a
 shopping list for hosts where you install skills one by one.
 
 ```powershell
-.\scripts\install-skillset.ps1 game-dev
-.\scripts\install-skillset.ps1 html5-game-publishing
-.\scripts\install-skillset.ps1 sales-marketing
+.\scripts\install-skillset.ps1 game-dev -Scope project -ProjectRoot ../MyGame
+.\scripts\install-skillset.ps1 html5-game-publishing -Scope project -ProjectRoot ../MyGame
+.\scripts\install-skillset.ps1 sales-marketing -Scope project -ProjectRoot ../MyBusiness
 ```
 
 Available skillsets:

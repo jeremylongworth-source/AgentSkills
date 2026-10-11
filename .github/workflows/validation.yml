@@ -29,6 +29,59 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Test validation gate error propagation
+        run: python scripts/test-validation-gates.py
+
+      - name: Set up required pinned scanner
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $PSNativeCommandUseErrorActionPreference = $false
+          # Official release assets: https://api.github.com/repos/BurntSushi/ripgrep/releases/tags/15.1.0
+          $assets = @{
+            'Windows-X64' = @('x86_64-pc-windows-msvc', '.zip', '124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d87493a')
+            'Windows-ARM64' = @('aarch64-pc-windows-msvc', '.zip', '00d931fb5237c9696ca49308818edb76d8eb6fc132761cb2a1bd616b2df02f8e')
+            'Linux-X64' = @('x86_64-unknown-linux-musl', '.tar.gz', '1c9297be4a084eea7ecaedf93eb03d058d6faae29bbc57ecdaf5063921491599')
+            'macOS-X64' = @('x86_64-apple-darwin', '.tar.gz', '64811cb24e77cac3057d6c40b63ac9becf9082eedd54ca411b475b755d334882')
+            'macOS-ARM64' = @('aarch64-apple-darwin', '.tar.gz', '378e973289176ca0c6054054ee7f631a065874a352bf43f0fa60ef079b6ba715')
+          }
+          $platform = "$($env:RUNNER_OS)-$($env:RUNNER_ARCH)"
+          if (-not $assets.ContainsKey($platform)) { throw "Unsupported scanner platform: $platform" }
+          if ([string]::IsNullOrWhiteSpace($env:RUNNER_TEMP) -or [string]::IsNullOrWhiteSpace($env:GITHUB_PATH)) {
+            throw 'Required ephemeral runner paths are unavailable.'
+          }
+          $asset = $assets[$platform]
+          $package = 'ripgrep-15.1.0-' + $asset[0]
+          $fileName = $package + $asset[1]
+          $scannerRoot = Join-Path $env:RUNNER_TEMP 'agentskills-ripgrep-15.1.0'
+          New-Item -ItemType Directory -Path $scannerRoot -Force | Out-Null
+          $archive = Join-Path $scannerRoot $fileName
+          $url = 'https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/' + $fileName
+          Invoke-WebRequest -Uri $url -OutFile $archive
+          $actualHash = (Get-FileHash -LiteralPath $archive -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actualHash -ne $asset[2]) { throw "Scanner archive checksum mismatch for $platform." }
+          if ($asset[1] -eq '.zip') {
+            Expand-Archive -LiteralPath $archive -DestinationPath $scannerRoot -Force
+          } else {
+            & tar -xzf $archive -C $scannerRoot
+            $exitCode = $LASTEXITCODE
+            if ($exitCode -ne 0) { throw "Scanner extraction failed with exit code $exitCode." }
+          }
+          $binaryDir = Join-Path $scannerRoot $package
+          $binaryName = if ($env:RUNNER_OS -eq 'Windows') { 'rg.exe' } else { 'rg' }
+          $binary = Join-Path $binaryDir $binaryName
+          if (-not (Test-Path -LiteralPath $binary -PathType Leaf)) { throw 'Extracted scanner binary is missing.' }
+          $version = & $binary --version
+          $exitCode = $LASTEXITCODE
+          if ($exitCode -ne 0) { throw "Scanner version check failed with exit code $exitCode." }
+          $versionText = $version -join "`n"
+          if ($versionText -notmatch 'ripgrep 15\.1\.0' -or $versionText -notmatch '\+pcre2') {
+            throw 'Scanner version or required PCRE2 support is missing.'
+          }
+          $version | ForEach-Object { Write-Host $_ }
+          Write-Host "Verified scanner archive SHA256: $actualHash ($platform)"
+          [System.IO.File]::AppendAllText($env:GITHUB_PATH, "$binaryDir`n", [System.Text.UTF8Encoding]::new($false))
+
       - name: Run release gate
         shell: pwsh
         run: |

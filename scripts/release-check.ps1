@@ -5,6 +5,9 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+# Native status is checked explicitly below. In particular, rg exit 1 means
+# a successful scan with no matches, even if the caller enables PS7's preference.
+$PSNativeCommandUseErrorActionPreference = $false
 
 if ([string]::IsNullOrWhiteSpace($RepoRoot)) {
   $scriptDir = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
@@ -60,6 +63,10 @@ function Invoke-PowerShellFile {
   $psArgs += @('-File', $Path)
   $psArgs += $Arguments
   & $PowerShellHost @psArgs
+  $exitCode = $LASTEXITCODE
+  if ($exitCode -ne 0) {
+    throw "Child PowerShell script '$Path' failed with exit code $exitCode."
+  }
 }
 
 function Invoke-Check {
@@ -81,8 +88,7 @@ function Invoke-RgNoMatches {
 
   $rg = Get-Command rg -ErrorAction SilentlyContinue
   if (-not $rg) {
-    Write-Host "skip: $Name (rg not found)"
-    return
+    throw "$Name could not run: rg not found."
   }
 
   $output = & rg --hidden --glob '!.git/**' --glob '!**/.git/**' --glob '!**/node_modules/**' --glob '!**/.venv/**' --glob '!**/__pycache__/**' --line-number --pcre2 -- $Pattern $RepoRoot
@@ -98,6 +104,8 @@ function Invoke-RgNoMatches {
 
 Invoke-Check "git diff whitespace" {
   git -C $RepoRoot diff --check
+  $exitCode = $LASTEXITCODE
+  if ($exitCode -ne 0) { throw "git diff whitespace failed with exit code $exitCode." }
 }
 
 Invoke-Check "skill and skillset validation" {
@@ -110,12 +118,19 @@ Invoke-Check "skillset install dry runs" {
   foreach ($skillset in $skillsets) {
     $name = [System.IO.Path]::GetFileNameWithoutExtension($skillset.Name)
     Write-Host "Dry run: $name"
-    Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/install-skillset.ps1') @($name, '-RepoRoot', $RepoRoot, '-CodexHome', $dryRunHome, '-DryRun') | Out-Null
+    python (Join-Path $RepoRoot 'scripts/install-skillset.py') --skillset $name --repo-root $RepoRoot --codex-home $dryRunHome --dry-run | Out-Null
+    $exitCode = $LASTEXITCODE
+    if ($exitCode -ne 0) { throw "Skillset '$name' install dry run failed with exit code $exitCode." }
   }
 }
 
 Invoke-Check "fresh Codex home install smoke" {
   Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/test-fresh-codex-home.ps1') @('-RepoRoot', $RepoRoot)
+}
+
+Invoke-Check "installer scope and preservation regression tests" {
+  python (Join-Path $RepoRoot 'tests/test_install_skillset.py')
+  if ($LASTEXITCODE -ne 0) { throw "Installer regression tests failed." }
 }
 
 Invoke-Check "skillset listing" {
@@ -136,11 +151,15 @@ if (-not $SkipPublishDryRun) {
   Invoke-Check "gh skill publish dry run" {
     $gh = Find-GitHubCli
     & $gh skill publish --dry-run
+    $exitCode = $LASTEXITCODE
+    if ($exitCode -ne 0) { throw "gh skill publish dry run failed with exit code $exitCode." }
   }
 }
 
 Invoke-Check "git status summary" {
   $status = git -C $RepoRoot status --short
+  $exitCode = $LASTEXITCODE
+  if ($exitCode -ne 0) { throw "git status summary failed with exit code $exitCode." }
   if ($status) {
     Write-Host "Working tree has changes:"
     $status | ForEach-Object { Write-Host $_ }

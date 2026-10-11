@@ -670,3 +670,9 @@ market-share-evidence-check:
   - competitive-market-research
 competitor-source-freshness:
   - competitive-market-research
+
+global-foundation:
+  - agentskills-project-onboarding
+  - safe-install-checklist
+  - acceptance-criteria-mapper
+  - concise-technical-writing

@@ -9,7 +9,9 @@ A skill is ready when it meets these checks:
 - avoids generic advice a model already knows
 - includes freshness rules for current docs, legal, platform, model, or API claims
 - validates with the official skill validator
-- is mentioned in account routing when globally relevant
+- uses precise discovery metadata and the narrowest useful install scope
+- distinguishes required review gates from reusable workflow guidance
+- supports authorized follow-through without unnecessary questions or tests
 
 For bundle promotion and release review, use the
 [evaluation method](evaluation/evaluation-method.md),

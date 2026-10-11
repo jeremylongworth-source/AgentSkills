@@ -27,3 +27,4 @@ packet ID in `../v0.2-validation-tracker.md`.
 | `QUALITY-001` | `quality-testing` | public-safe | ready |
 | `DEVOPS-001` | `devops-cloud-release` | public-safe | ready |
 | `BACKEND-001` | `backend-api` | public-safe | ready |
+| `ASTRA-001` | shared instructions | synthetic-calibration | [prompt cases; live runs pending](ASTRA-001-instruction-behavior.md) |

@@ -1,0 +1,16 @@
+name: global-foundation
+description: Durable cross-project planning, review, validation, and skill-authoring workflows for user scope.
+skills:
+  - agentskills-project-onboarding
+  - concise-technical-writing
+  - product-brainstorming-planning
+  - write-spec
+  - issue-to-plan
+  - acceptance-criteria-mapper
+  - pr-review
+  - regression-check
+  - release-risk
+  - skill-evaluation-iteration
+  - scenario-test-authoring
+  - prompt-regression-testing
+  - safe-install-checklist

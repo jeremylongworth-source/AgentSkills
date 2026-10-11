@@ -1,81 +1,88 @@
 # Codex Setup
 
-Codex has native support for agent skills. Use `gh skill install` for portable
-atomic skill installs, or use the repository skillset installer when you want a
-curated AgentSkills bundle with Codex routing and MCP snippets.
+Keep global instructions universal and install domain workflows in the
+repositories that use them. These examples use the local development adapter;
+older published tags do not include the new scope options.
 
-## Install One Skill
+For model selection, instruction tuning, and verification with `gpt-6-astra`,
+see [AgentSkills with Astra](astra.md). Selecting a model is separate from
+installing skills; the adapter does not change the model or reasoning setting.
 
-Preview the skill:
-
-```powershell
-gh skill preview jeremylongworth-source/AgentSkills game-threejs-development
-```
-
-Install it for all Codex projects:
+## Global Foundation
 
 ```powershell
-gh skill install jeremylongworth-source/AgentSkills game-threejs-development --agent codex --scope user --pin v0.1.1
+.\scripts\install-skillset.ps1 global-foundation -Scope user -DryRun
+.\scripts\install-skillset.ps1 global-foundation -Scope user
 ```
 
-Install it into the current repository instead:
+This installs 13 custom skills. Codex-managed `openai-docs` and `skill-creator`
+complete the 15-skill foundation and are left untouched. Frequent skill authors
+can add the evaluation extension:
 
 ```powershell
-gh skill install jeremylongworth-source/AgentSkills game-threejs-development --agent codex --scope project --pin v0.1.1
+.\scripts\install-skillset.ps1 agentops-evaluation -Scope user
 ```
 
-## Install a Skillset
+Together these manifests install 17 unique custom skills. User scope preserves
+this adapter's existing `$CODEX_HOME/skills` layout (`~/.codex/skills` by default).
+Use `-CodexHome` to select another home. Existing skills with the same names are
+replaced; unrelated skills are preserved. Back up local modifications first.
 
-From the repository root, install a curated skillset:
+## Project Skills
+
+Choose an existing repository directory explicitly:
 
 ```powershell
-.\scripts\install-skillset.ps1 game-dev
+.\scripts\install-skillset.ps1 game-dev -Scope project -ProjectRoot ../MyGame -DryRun
+.\scripts\install-skillset.ps1 game-dev -Scope project -ProjectRoot ../MyGame
 ```
 
-The PowerShell installer:
+Project skills go to `<project>/.agents/skills`. User scope remains the default
+for compatibility with older callers; always spell out scope in new setup.
+Use `all` only when the full catalog is explicitly needed for development or
+testing. For one atomic skill, use a supported host installer or copy its
+complete folder to the appropriate skill directory.
 
-- copies the skillset's skills into the Codex home skills directory
-- appends MCP server snippets from the skillset presets to Codex config
-- appends the skillset routing template to the Codex home `AGENTS.md`
+## Optional MCP and Routing
 
-Useful first skillsets:
+Skills install without changing MCP configuration or instruction files.
+After reviewing the manifest's presets and routing template, opt in separately:
 
 ```powershell
-.\scripts\install-skillset.ps1 game-dev
-.\scripts\install-skillset.ps1 html5-game-publishing
-.\scripts\install-skillset.ps1 frontend-product
+.\scripts\install-skillset.ps1 game-dev -Scope project -ProjectRoot ../MyGame -WithMcp -WithAgents -DryRun
 ```
 
-Restart Codex after installing a skillset if new MCP servers or skills do not
-appear immediately.
+Remove `-DryRun` to apply the reviewed install. Project MCP snippets are added
+to `<project>/.codex/config.toml`; routing is appended once to the project's
+`AGENTS.md`, preserving existing text. Existing MCP server entries are retained.
+Review project trust and tool access in Codex before using configured tools.
 
-## Add Project Routing
+`-WithMcp` in user scope adds snippets to `$CODEX_HOME/config.toml` only when
+explicitly requested. `-WithAgents` is rejected in user scope: the installer
+never writes global `AGENTS.md`. Manifests can omit both presets and routing.
+Old global routing blocks are not removed automatically; review and back them
+up before a separate cleanup.
 
-For project-specific routing, copy the closest template from `agents/` into the
-project root as `AGENTS.md`.
+## Python and Bash
 
-Examples:
+The Python adapter accepts `--scope`, `--project-root`, `--codex-home`,
+`--with-mcp`, `--with-agents`, and `--dry-run`. The Bash wrapper forwards these
+options and uses `python3` (or the `PYTHON` environment override):
 
-- `agents/AGENTS.game-dev.md` for game projects
-- `agents/AGENTS.sales-marketing.md` for GTM and revenue workflows
-- `agents/AGENTS.full.md` for broad AgentSkills routing
-
-Keep project routing short. Put reusable procedures in skills, not in
-`AGENTS.md`.
+```bash
+./scripts/install-skillset.sh global-foundation --scope user --dry-run
+./scripts/install-skillset.sh game-dev --scope project --project-root ../MyGame
+```
 
 ## Verify
 
-Start Codex from the repository root and check that the skill appears in the
-skills list. You can also explicitly invoke a skill by name, for example:
-
-```text
-$game-threejs-development review this scene architecture
-```
-
-For implicit routing, ask for a task that matches the skill description and
-confirm that Codex reads the matching `SKILL.md`.
+Start a fresh Codex task in the repository and inspect its available skills.
+Invoke one intended skill and confirm the matching instructions are read.
+Check global `AGENTS.md` is unchanged and domain skills are scoped correctly.
+Dry-run and filesystem checks verify installation, not model routing behavior.
 
 ## References
 
-- [OpenAI Codex agent skills](https://developers.openai.com/codex/skills)
-- [GitHub CLI `gh skill install`](https://cli.github.com/manual/gh_skill_install)
+- [OpenAI skill discovery and scope](https://learn.chatgpt.com/docs/build-skills)
+- [OpenAI configuration reference](https://learn.chatgpt.com/docs/config-file/config-reference)
+- [Global Foundation brief](../bundles/global-foundation.md)

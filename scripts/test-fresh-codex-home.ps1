@@ -1,6 +1,6 @@
 param(
   [string]$RepoRoot = '',
-  [string[]]$Skillsets = @('game-dev', 'all'),
+  [string[]]$Skillsets = @('global-foundation', 'game-dev', 'all'),
   [switch]$KeepTemp
 )
 
@@ -115,7 +115,7 @@ try {
     }
 
     $codexHome = Join-Path $tempRoot $skillset
-    Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/install-skillset.ps1') @($skillset, '-RepoRoot', $RepoRoot, '-CodexHome', $codexHome) | Out-Null
+    Invoke-PowerShellFile (Join-Path $RepoRoot 'scripts/install-skillset.ps1') @($skillset, '-RepoRoot', $RepoRoot, '-CodexHome', $codexHome, '-WithMcp') | Out-Null
 
     $skills = Read-ListValue -Path $manifestPath -Key 'skills'
     foreach ($skill in $skills) {
@@ -146,16 +146,8 @@ try {
       }
     }
 
-    $agentsFile = Read-ScalarValue -Path $manifestPath -Key 'agents_file'
-    if (-not [string]::IsNullOrWhiteSpace($agentsFile)) {
-      $agentsPath = Join-Path $codexHome 'AGENTS.md'
-      $marker = "AgentSkills skillset: $skillset"
-      if (-not (Test-Path $agentsPath)) {
-        throw "${skillset}: missing AGENTS.md"
-      }
-      if (-not (Select-String -Path $agentsPath -SimpleMatch $marker -Quiet)) {
-        throw "${skillset}: missing AGENTS marker"
-      }
+    if (Test-Path (Join-Path $codexHome 'AGENTS.md')) {
+      throw "${skillset}: user installation must not create global AGENTS.md"
     }
 
     Write-Host "ok: $skillset fresh-home install ($($skills.Count) skills)"

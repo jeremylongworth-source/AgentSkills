@@ -4,6 +4,9 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+# Check native exit codes ourselves, including when the caller enables PS7's
+# native-command error preference. This variable is harmless in Windows PS5.1.
+$PSNativeCommandUseErrorActionPreference = $false
 
 if ([string]::IsNullOrWhiteSpace($RepoRoot)) {
   $scriptDir = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
@@ -18,15 +21,33 @@ if ([string]::IsNullOrWhiteSpace($Validator)) {
 $skillsDir = Join-Path $RepoRoot 'skills'
 $skills = Get-ChildItem -Path $skillsDir -Directory | Sort-Object Name
 
+function Invoke-PythonValidator {
+  param(
+    [string[]]$Arguments,
+    [string]$Name,
+    [switch]$Quiet
+  )
+
+  if ($Quiet) {
+    $output = & python @Arguments
+  } else {
+    & python @Arguments
+  }
+  $exitCode = $LASTEXITCODE
+  if ($exitCode -ne 0) {
+    if ($Quiet) { $output | ForEach-Object { Write-Host $_ } }
+    throw "$Name failed with exit code $exitCode."
+  }
+}
+
 if (Test-Path $Validator) {
   foreach ($skill in $skills) {
-    python $Validator $skill.FullName | Out-Null
+    Invoke-PythonValidator @($Validator, $skill.FullName) "External skill validator ($($skill.Name))" -Quiet
   }
 } else {
   Write-Host "External skill validator not found; using repo-local skill checks."
 }
 
-python (Join-Path $RepoRoot 'scripts/validate-skill-files.py') --repo-root $RepoRoot
-python (Join-Path $RepoRoot 'scripts/validate-skillsets.py') --repo-root $RepoRoot
-python (Join-Path $RepoRoot 'scripts/validate-scenarios.py') --repo-root $RepoRoot
-python (Join-Path $RepoRoot 'scripts/validate-docs.py') --repo-root $RepoRoot
+foreach ($script in @('validate-skill-files.py', 'validate-skillsets.py', 'validate-scenarios.py', 'validate-docs.py')) {
+  Invoke-PythonValidator @((Join-Path $RepoRoot "scripts/$script"), '--repo-root', $RepoRoot) $script
+}

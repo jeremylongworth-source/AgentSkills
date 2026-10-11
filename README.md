@@ -126,7 +126,7 @@ The current default-branch development scope validates:
 
 - 167 skill files
 - 35 skillsets
-- 125 routing scenarios
+- 128 routing scenarios
 - all skillset install dry-runs
 - fresh Codex home smoke tests for `global-foundation`, `game-dev`, and `all`
 - docs consistency, secret, and local-path scans

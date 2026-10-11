@@ -16,7 +16,7 @@ is cut.
 - Codex installation now supports explicit project scope, opt-in MCP setup,
   and opt-in project routing; global `AGENTS.md` is never changed.
 - Added installer regression coverage for scope, preservation and preflight
-  failure. Current development inventory: 167 skills, 35 skillsets, and 125
+  failure. Current development inventory: 167 skills, 35 skillsets, and 128
   routing scenarios.
 
 - Added `local-video-assembly` for FFMPEG render manifests, local video

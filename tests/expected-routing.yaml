@@ -664,3 +664,9 @@ brand-social-launch-pack:
   - social-asset-production
   - ai-video-prompt-pack
   - publishing-checklist
+customer-interview-evidence-boundary:
+  - customer-research-validation
+market-share-evidence-check:
+  - competitive-market-research
+competitor-source-freshness:
+  - competitive-market-research

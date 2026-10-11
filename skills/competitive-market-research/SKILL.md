@@ -1,6 +1,6 @@
 ---
 name: competitive-market-research
-description: Research, compare, and synthesize markets, categories, competitors, alternatives, pricing, feature sets, audience segments, positioning, review themes, and strategic opportunities. Use when Codex is asked for competitive analysis, market maps, category research, competitor messaging, pricing comparison, SWOT, positioning gaps, or market-entry research.
+description: Research, compare, and synthesize markets, categories, competitors, alternatives, pricing, feature sets, audience segments, positioning, review themes, and strategic opportunities. Use when Codex is asked for competitive analysis, market maps, category research, competitor messaging, pricing comparison, SWOT, positioning gaps, or market-entry research. Also use for standalone checks of competitor or market-entry evidence, including unsupported market-share claims and dated or conflicting prices.
 license: MIT
 ---
 
@@ -18,6 +18,8 @@ license: MIT
 ## Freshness Rule
 
 Competitive data changes quickly. Verify current sources when giving tactical claims about pricing, packaging, features, market share, ad messaging, integrations, or customer reviews. Date findings when useful.
+
+For a supplied-document comparison, name the missing evidence and the next source-verification action before a positioning or buying claim is used. When market share is unsupported, identify the market definition, measurement period, share metric, and credible source needed; do not supply a researched estimate or citation without evidence.
 
 ## Deliverable Shape
 
